@@ -7,8 +7,8 @@
 LegEquipment::LegEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {
 }
 
-void LegEquipment::mountToParent() {
-    Mountable::mountToParent();
+void LegEquipment::mountToParent(Character *character) {
+    Mountable::mountToParent(character);
     setScale(0.8);
     setPos(-60, -110);
 }

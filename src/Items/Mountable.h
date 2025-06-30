@@ -4,11 +4,11 @@
 
 #ifndef QT_PROGRAMMING_2024_MOUNTABLE_H
 #define QT_PROGRAMMING_2024_MOUNTABLE_H
-
+class Character;
 
 class Mountable {
 public:
-    virtual void mountToParent();
+    virtual void mountToParent(Character *character);
 
     virtual void unmount();
 

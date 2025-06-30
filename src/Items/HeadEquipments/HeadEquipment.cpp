@@ -7,8 +7,8 @@
 HeadEquipment::HeadEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {
 }
 
-void HeadEquipment::mountToParent() {
-    Mountable::mountToParent();
+void HeadEquipment::mountToParent(Character *character) {
+    Mountable::mountToParent(character);
     setScale(0.4);
     setPos(-30, -210);
 }

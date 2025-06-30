@@ -11,67 +11,114 @@
 BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     // This is useful if you want the scene to have the exact same dimensions as the view
     setSceneRect(0, 0, 1280, 720);
+
     map = new Battlefield();
-    character = new Link();
+    // 创建两个玩家角色
+    character1 = new Link(Character::TYPE_PLAYER1);
+    character2 = new Link(Character::TYPE_PLAYER2);
+
     spareArmor = new FlamebreakerArmor();
+
     addItem(map);
-    addItem(character);
+    addItem(character1);
+    addItem(character2);
     addItem(spareArmor);
+
     map->scaleToFitScene(this);
-    character->setPos(map->getSpawnPos());
+
+    // 设置角色起始位置
+    // 设置不同位置
+    character1->setPos(map->getSpawnPos());   // 玩家1起始位置
+    character2->setPos(map->getSpawnPos()+QPointF(100,0));   // 玩家2起始位置
+
     spareArmor->unmount();
-    spareArmor->setPos(sceneRect().left() + (sceneRect().right() - sceneRect().left()) * 0.75, map->getFloorHeight());
+    spareArmor->setPos(100, map->getFloorHeight());
+
 }
 
 void BattleScene::processInput() {
     Scene::processInput();
-    if (character != nullptr) {
-        character->processInput();
+    if (character1 != nullptr) {
+        character1->processInput();
+    }
+    if (character2 != nullptr) {
+        character2->processInput();
     }
 }
 
 void BattleScene::keyPressEvent(QKeyEvent *event) {
-    switch (event->key()) {
+    // 玩家1控制 - WASD
+    if (character1 != nullptr) {
+        switch (event->key()) {
         case Qt::Key_A:
-            if (character != nullptr) {
-                character->setLeftDown(true);
-            }
+            character1->setLeftDown(true);
             break;
         case Qt::Key_D:
-            if (character != nullptr) {
-                character->setRightDown(true);
-            }
+            character1->setRightDown(true);
             break;
-        case Qt::Key_J:
-            if (character != nullptr) {
-                character->setPickDown(true);
-            }
+        case Qt::Key_Space:
+            character1->setPickDown(true);
             break;
         default:
-            Scene::keyPressEvent(event);
+            Scene::keyPressEvent(event);;
+        }
     }
+
+    // 玩家2控制 - 方向键
+    if (character2 != nullptr) {
+        switch (event->key()) {
+        case Qt::Key_Left:
+            character2->setLeftDown(true);
+            break;
+        case Qt::Key_Right:
+            character2->setRightDown(true);
+            break;
+        case Qt::Key_Shift:
+            character2->setPickDown(true);
+            break;
+        default:
+            Scene::keyPressEvent(event);;
+        }
+    }
+
 }
 
 void BattleScene::keyReleaseEvent(QKeyEvent *event) {
-    switch (event->key()) {
+    // 玩家1控制 - WASD
+    if (character1 != nullptr) {
+        switch (event->key()) {
         case Qt::Key_A:
-            if (character != nullptr) {
-                character->setLeftDown(false);
-            }
+            character1->setLeftDown(false);
             break;
         case Qt::Key_D:
-            if (character != nullptr) {
-                character->setRightDown(false);
-            }
+            character1->setRightDown(false);
             break;
-        case Qt::Key_J:
-            if (character != nullptr) {
-                character->setPickDown(false);
-            }
+        case Qt::Key_Space:
+            character1->setPickDown(false);
             break;
         default:
             Scene::keyReleaseEvent(event);
+        }
     }
+
+    // 玩家2控制 - 方向键
+    if (character2 != nullptr) {
+        switch (event->key()) {
+        case Qt::Key_Left:
+            character2->setLeftDown(false);
+            break;
+        case Qt::Key_Right:
+            character2->setRightDown(false);
+            break;
+        case Qt::Key_Shift:
+            character2->setPickDown(false);
+            break;
+        default:
+            Scene::keyReleaseEvent(event);
+        }
+    }
+
+
 }
 
 void BattleScene::update() {
@@ -80,17 +127,35 @@ void BattleScene::update() {
 
 void BattleScene::processMovement() {
     Scene::processMovement();
-    if (character != nullptr) {
-        character->setPos(character->pos() + character->getVelocity() * (double) deltaTime);
+
+    // 更新两个角色的位置
+    if (character1 != nullptr) {
+        character1->setPos(character1->pos() + character1->getVelocity() * (double) deltaTime);
+    }
+    if (character2 != nullptr) {
+        character2->setPos(character2->pos() + character2->getVelocity() * (double) deltaTime);
     }
 }
 
 void BattleScene::processPicking() {
     Scene::processPicking();
-    if (character->isPicking()) {
-        auto mountable = findNearestUnmountedMountable(character->pos(), 100.);
+
+    // 处理玩家1的拾取
+    if (character1 != nullptr && character1->isPicking()) {
+
+        auto mountable = findNearestUnmountedMountable(character1->pos(), 100.);
         if (mountable != nullptr) {
-            spareArmor = dynamic_cast<Armor *>(pickupMountable(character, mountable));
+            spareArmor = dynamic_cast<Armor *>(pickupMountable(character1, mountable));
+        }
+    }
+
+    // 处理玩家2的拾取
+    if (character2 != nullptr && character2->isPicking()) {
+
+        auto mountable = findNearestUnmountedMountable(character2->pos(), 100.);
+
+        if (mountable != nullptr) {
+            spareArmor = dynamic_cast<Armor *>(pickupMountable(character2, mountable));
         }
     }
 }

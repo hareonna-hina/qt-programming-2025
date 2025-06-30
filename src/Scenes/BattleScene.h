@@ -38,7 +38,8 @@ private:
     static Mountable * pickupMountable(Character *character, Mountable *mountable);
 
     Map *map;
-    Character *character;
+    Character *character1;
+    Character *character2;
     Armor *spareArmor;
 };
 

@@ -1,0 +1,3 @@
+D:\cmake\bin\cmake.exe -E rm -f CMakeFiles\qt_programming_2024.dir/objects.a
+D:\qtt\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\qt_programming_2024.dir/objects.a @CMakeFiles\qt_programming_2024.dir\objects1.rsp
+D:\qtt\Tools\mingw1120_64\bin\g++.exe -DQT_QML_DEBUG -g -Wl,--whole-archive CMakeFiles\qt_programming_2024.dir/objects.a -Wl,--no-whole-archive -o qt_programming_2024.exe -Wl,--out-implib,libqt_programming_2024.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\qt_programming_2024.dir\linkLibs.rsp

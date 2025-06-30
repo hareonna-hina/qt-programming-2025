@@ -5,7 +5,8 @@
 #include <QTransform>
 #include "Character.h"
 
-Character::Character(QGraphicsItem *parent) : Item(parent, "") {
+Character::Character(CharacterType type, QGraphicsItem *parent)
+    : Item(parent, ""), m_type(type) {
 //    ellipseItem = new QGraphicsEllipseItem(-5, -5, 10, 10, this);
 //    // Optionally, set some properties of the ellipse
 //    ellipseItem->setBrush(Qt::green);          // Fill color
@@ -47,14 +48,30 @@ void Character::setVelocity(const QPointF &velocity) {
 void Character::processInput() {
     auto velocity = QPointF(0, 0);
     const auto moveSpeed = 0.3;
-    if (isLeftDown()) {
-        velocity.setX(velocity.x() - moveSpeed);
-        setTransform(QTransform().scale(1, 1));
+
+    // 根据角色类型分配不同按键
+    if (m_type == TYPE_PLAYER1) {
+        if (isLeftDown()) {  // 玩家1向左移动
+            velocity.setX(velocity.x() - moveSpeed);
+            setTransform(QTransform().scale(1, 1));
+        }
+        if (isRightDown()) { // 玩家1向右移动
+            velocity.setX(velocity.x() + moveSpeed);
+            setTransform(QTransform().scale(-1, 1));
+        }
+        // 添加玩家1其他按键控制...
+    } else { // 玩家2控制
+        if (isLeftDown()) {  // 玩家2向左移动
+            velocity.setX(velocity.x() - moveSpeed);
+            setTransform(QTransform().scale(1, 1));
+        }
+        if (isRightDown()) { // 玩家2向右移动
+            velocity.setX(velocity.x() + moveSpeed);
+            setTransform(QTransform().scale(-1, 1));
+        }
+        // 添加玩家2其他按键控制...
     }
-    if (isRightDown()) {
-        velocity.setX(velocity.x() + moveSpeed);
-        setTransform(QTransform().scale(-1, 1));
-    }
+
     setVelocity(velocity);
 
     if (!lastPickDown && pickDown) { // first time pickDown
@@ -77,8 +94,9 @@ Armor *Character::pickupArmor(Armor *newArmor) {
         oldArmor->setParentItem(parentItem());
     }
     newArmor->setParentItem(this);
-    newArmor->mountToParent();
+    newArmor->mountToParent(this);
     armor = newArmor;
     return oldArmor;
 }
+
 

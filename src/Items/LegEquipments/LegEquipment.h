@@ -13,7 +13,7 @@ class LegEquipment: public Item, public Mountable {
 public:
     explicit LegEquipment(QGraphicsItem *parent, const QString &pixmapPath);
 
-    void mountToParent() override;
+    void mountToParent(Character *character) override;
 };
 
 

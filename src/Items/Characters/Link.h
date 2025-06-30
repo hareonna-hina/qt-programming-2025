@@ -10,7 +10,8 @@
 
 class Link : public Character {
 public:
-    explicit Link(QGraphicsItem *parent = nullptr);
+    // 添加角色类型参数
+    explicit Link(Character::CharacterType type, QGraphicsItem *parent = nullptr);
 };
 
 

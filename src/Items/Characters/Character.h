@@ -10,9 +10,13 @@
 #include "../Armors/Armor.h"
 #include "../LegEquipments/LegEquipment.h"
 
+
 class Character : public Item {
 public:
-    explicit Character(QGraphicsItem *parent);
+    // 添加角色类型标识
+    enum CharacterType { TYPE_PLAYER1, TYPE_PLAYER2 };
+
+    explicit Character(CharacterType type, QGraphicsItem *parent); // 修改构造函数
 
     [[nodiscard]] bool isLeftDown() const;
 
@@ -36,11 +40,14 @@ public:
 
     Armor* pickupArmor(Armor* newArmor);
 
+    CharacterType characterType() const { return m_type; } // 获取角色类型
+
 protected:
     HeadEquipment *headEquipment{};
     LegEquipment *legEquipment{};
     Armor *armor{};
     QPointF velocity{};
+    CharacterType m_type; // 存储角色类型
 //    QGraphicsEllipseItem *ellipseItem; // for debugging
 private:
     bool leftDown{}, rightDown{}, pickDown{};

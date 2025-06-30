@@ -46,7 +46,19 @@ add_executable(qt_programming_2024 src/main.cpp
         src/Items/Mountable.cpp
         src/Items/Mountable.h
         src/Items/Armors/FlamebreakerArmor.cpp
-        src/Items/Armors/FlamebreakerArmor.h)
+        src/Items/Armors/FlamebreakerArmor.h
+
+
+
+
+
+
+
+
+
+
+
+)
 target_link_libraries(qt_programming_2024
         Qt::Core
         Qt::Gui

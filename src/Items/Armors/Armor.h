@@ -12,7 +12,7 @@ class Armor : public Item, public Mountable {
 public:
     explicit Armor(QGraphicsItem *parent, const QString &pixmapPath);
 
-    void mountToParent() override;
+    void mountToParent(Character* character) override;
 
     void unmount() override;
 };

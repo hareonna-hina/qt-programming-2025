@@ -6,24 +6,25 @@
 
 Map::Map(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {}
 
+
 void Map::scaleToFitScene(QGraphicsScene *scene) {
-    // Calculate scale factors to scale the item to fit the entire scene
+    if (!scene || !pixmapItem) return;
+
+    // 场景尺寸（1280x720）
     QRectF sceneRect = scene->sceneRect();
-    QRectF itemRect = boundingRect();
+    // 图片原始尺寸
+    QSize imgSize = pixmapItem->pixmap().size();
 
-    qreal scaleX = sceneRect.width() / itemRect.width();
-    qreal scaleY = sceneRect.height() / itemRect.height();
-
-    // Choose the smaller scale factor to maintain aspect ratio
+    qreal scaleX = sceneRect.width() / (qreal)imgSize.width();
+    qreal scaleY = sceneRect.height() / (qreal)imgSize.height();
     qreal scaleFactor = qMin(scaleX, scaleY);
 
-    // Apply the scale to the item
+    // 应用缩放 + 居中
     setTransform(QTransform::fromScale(scaleFactor, scaleFactor), true);
-
-    // Center the item in the scene (optional)
-    setPos((sceneRect.width() - boundingRect().width() * scaleFactor) / 2,
-           (sceneRect.height() - boundingRect().height() * scaleFactor) / 2);
-
+    setPos(
+        (sceneRect.width() - imgSize.width()*scaleFactor)/2,
+        (sceneRect.height() - imgSize.height()*scaleFactor)/2
+        );
 }
 
 QPointF Map::getSpawnPos() {

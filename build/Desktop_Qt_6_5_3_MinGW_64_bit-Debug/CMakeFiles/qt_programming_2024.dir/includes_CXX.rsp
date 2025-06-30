@@ -1,0 +1,1 @@
+-isystem "C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/qt_programming_2024_autogen/include" -isystem D:/qtt/6.5.3/mingw_64/include/QtCore -isystem D:/qtt/6.5.3/mingw_64/include -isystem "D:/qtt/6.5.3/mingw_64/mkspecs/win32-g++" -isystem D:/qtt/6.5.3/mingw_64/include/QtGui -isystem D:/qtt/6.5.3/mingw_64/include/QtWidgets

@@ -5,6 +5,7 @@
 #include <QDateTime>
 #include "Scene.h"
 
+
 Scene::Scene(QObject *parent) : QGraphicsScene(parent), timer(new QTimer(this)) {
     connect(timer, &QTimer::timeout, this, &Scene::update);
 }

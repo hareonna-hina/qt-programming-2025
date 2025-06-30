@@ -9,6 +9,8 @@
 #include <QPointF>
 #include "../Item.h"
 
+class Character;
+
 class Map : public Item {
 public:
     explicit Map(QGraphicsItem *parent = nullptr, const QString &pixmapPath = "");
