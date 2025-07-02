@@ -6,7 +6,7 @@
 #include "Character.h"
 
 Character::Character(CharacterType type, QGraphicsItem *parent)
-    : Item(parent, ""), m_type(type) {
+    : Item(parent, ""), m_type(type),is_squating(false) {
     if(type==TYPE_PLAYER1)
     {
         // 加载静止状态的图片
@@ -56,10 +56,8 @@ Character::Character(CharacterType type, QGraphicsItem *parent)
 //    ellipseItem->setBrush(Qt::green);          // Fill color
 //    ellipseItem->setZValue(1);
 
-
-
-
 }
+
 
 bool Character::isLeftDown() const {
     return leftDown;
@@ -85,6 +83,21 @@ void Character::setPickDown(bool pickDown) {
     Character::pickDown = pickDown;
 }
 
+
+void Character::setJumpDown(bool jumpDown) {
+    Character::jumpDown = jumpDown;
+}
+bool Character::isJumpDown() const {
+    return jumpDown;
+}
+
+void Character::setSquatDown(bool squatDown) {
+    Character::squatDown = squatDown;
+}
+bool Character::isSquatDown() const {
+    return squatDown;
+}
+
 const QPointF &Character::getVelocity() const {
     return velocity;
 }
@@ -102,25 +115,29 @@ void Character::processInput() {
         if (isLeftDown()) {  // 玩家1向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
+            //setVelocity(velocity);
         }
         if (isRightDown()) { // 玩家1向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
+            //setVelocity(velocity);
         }
         // 添加玩家1其他按键控制...
     } else { // 玩家2控制
         if (isLeftDown()) {  // 玩家2向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
+            //setVelocity(velocity);
         }
         if (isRightDown()) { // 玩家2向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
+            //setVelocity(velocity);
         }
         // 添加玩家2其他按键控制...
     }
-
     setVelocity(velocity);
+
 
     if (!lastPickDown && pickDown)
     { // first time pickDown
@@ -133,14 +150,25 @@ void Character::processInput() {
     lastPickDown = pickDown;
 
     // 根据速度更新人物状态
-    if (velocity.x() != 0 || velocity.y() != 0)
+    qDebug()<<"squat:"<<is_squating;
+    if(is_squating)
+    {
+        setState(STATE_SQUATING);
+        qDebug()<<"3";
+    }
+    else if((velocity.x()!=0||velocity.y()!=0)&&!is_squating)
     {
         setState(STATE_MOVING);
+        qDebug()<<"1";
     }
     else
     {
         setState(STATE_IDLE);
+        qDebug()<<"2";
+        qDebug()<<"squat:"<<is_squating;
     }
+    update();
+
 }
 
 bool Character::isPicking() const {
@@ -165,20 +193,28 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     {
         idlePixmapItem->setVisible(true);
         movingPixmapItem->setVisible(false);
+        jumpingPixmapItem->setVisible(false);
+        squatingPixmapItem->setVisible(false);
     }
     else if (m_state == STATE_MOVING)
     {
         idlePixmapItem->setVisible(false);
         movingPixmapItem->setVisible(true);
+        jumpingPixmapItem->setVisible(false);
+        squatingPixmapItem->setVisible(false);
     }
     else if (m_state == STATE_JUMPING)
     {
         idlePixmapItem->setVisible(false);
+        movingPixmapItem->setVisible(false);
         jumpingPixmapItem->setVisible(true);
+        squatingPixmapItem->setVisible(false);
     }
     else if (m_state == STATE_SQUATING)
     {
         idlePixmapItem->setVisible(false);
+        movingPixmapItem->setVisible(false);
+        jumpingPixmapItem->setVisible(false);
         squatingPixmapItem->setVisible(true);
     }
 
@@ -186,18 +222,19 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     {
         idlePixmapItem->paint(painter, option, widget);
     }
-    else if (movingPixmapItem->isVisible())
+    if (movingPixmapItem->isVisible())
     {
         movingPixmapItem->paint(painter, option, widget);
     }
-    else if (jumpingPixmapItem->isVisible())
+    if (jumpingPixmapItem->isVisible())
     {
         jumpingPixmapItem->paint(painter, option, widget);
     }
-    else if (squatingPixmapItem->isVisible())
+    if (squatingPixmapItem->isVisible())
     {
         squatingPixmapItem->paint(painter, option, widget);
     }
+    update();
 }
 
 

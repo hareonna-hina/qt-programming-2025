@@ -411,4 +411,8 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Battlefield.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.h \
- C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.h
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h

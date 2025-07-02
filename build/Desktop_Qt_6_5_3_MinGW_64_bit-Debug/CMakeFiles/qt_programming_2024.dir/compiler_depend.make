@@ -6168,6 +6168,7 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: C:/Users/Bocc
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QDebug \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
@@ -6193,6 +6194,7 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: C:/Users/Bocc
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -6206,6 +6208,7 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: C:/Users/Bocc
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qflags.h \
@@ -6223,6 +6226,7 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: C:/Users/Bocc
   D:/qtt/6.5.3/mingw_64/include/QtCore/qiterator.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qline.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qlogging.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qmalloc.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qmap.h \

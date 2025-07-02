@@ -20,7 +20,7 @@ MyGame::MyGame(QWidget *parent) : QMainWindow(parent) {
     setCentralWidget(view);
 
     // Adjust the QMainWindow size to tightly wrap the QGraphicsView
-    //setFixedSize(view->sizeHint());
+    setFixedSize(1280,720);
     battleScene->startLoop();
 
 }

@@ -8,6 +8,7 @@
 #include "../Items/Maps/Battlefield.h"
 #include "../Items/Armors/FlamebreakerArmor.h"
 #include "../Items/StatusBar.h"
+#include <QDateTime>
 
 BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     // This is useful if you want the scene to have the exact same dimensions as the view
@@ -18,27 +19,27 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     character1 = new Link(Character::TYPE_PLAYER1);
     character2 = new Link(Character::TYPE_PLAYER2);
 
-    spareArmor = new FlamebreakerArmor();
+    //spareArmor = new FlamebreakerArmor();
 
     addItem(map);
     addItem(character1);
     addItem(character2);
-    addItem(spareArmor);
+    //addItem(spareArmor);
 
     map->scaleToFitScene(this);
 
     // 设置角色起始位置
     // 设置不同位置
-    character1->setPos(map->getSpawnPos());   // 玩家1起始位置
-    character2->setPos(map->getSpawnPos()+QPointF(100,0));   // 玩家2起始位置
+    character1->setPos(110,440);   // 玩家1起始位置
+    character2->setPos(1180,440);   // 玩家2起始位置
 
     // 创建玩家1的状态栏
-    statusBar_1 = new StatusBar(StatusBar::PLAYER_1, ":/Items/Maps/statusbar1.png", this);
+    statusBar_1 = new StatusBar(StatusBar::PLAYER_1, ":/Items/Maps/Battlefield/statusbar1.png", this);
     statusBar_1->setGeometry(10, 10, 200, 100);
 
 
     // 创建玩家2的状态栏
-    statusBar_2 = new StatusBar(StatusBar::PLAYER_2, ":/path/to/statusbar_background.png", this);
+    statusBar_2 = new StatusBar(StatusBar::PLAYER_2, ":/Items/Maps/Battlefield/statusbar2.png", this);
     statusBar_2->setGeometry(1060, 10, 200, 100);
 
 
@@ -62,13 +63,33 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
     if (character1 != nullptr) {
         switch (event->key()) {
         case Qt::Key_A:
-            character1->setLeftDown(true);
+            if(!character1->is_squating)
+            {
+                character1->setLeftDown(true);
+            }
             break;
         case Qt::Key_D:
-            character1->setRightDown(true);
+            if(!character1->is_squating)
+            {
+                character1->setRightDown(true);
+            }
             break;
-        case Qt::Key_Space:
+        case Qt::Key_S:
             character1->setPickDown(true);
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
+            if(!character1->is_squating && character1->m_squatStartTime == 0)
+            {
+                character1->m_squatStartTime=QDateTime::currentMSecsSinceEpoch();
+            }
+            break;
+        case Qt::Key_W:
+            if(!character1->is_squating)
+            {
+                character1->setJumpDown(true);
+            }
             break;
         default:
             Scene::keyPressEvent(event);;
@@ -79,13 +100,33 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
     if (character2 != nullptr) {
         switch (event->key()) {
         case Qt::Key_Left:
-            character2->setLeftDown(true);
+            if(!character2->is_squating)
+            {
+                character2->setLeftDown(true);
+            }
             break;
         case Qt::Key_Right:
-            character2->setRightDown(true);
+            if(!character2->is_squating)
+            {
+                character2->setRightDown(true);
+            }
             break;
-        case Qt::Key_Shift:
+        case Qt::Key_Down:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
             character2->setPickDown(true);
+            if(!character2->is_squating&& character2->m_squatStartTime == 0)
+            {
+                character2->m_squatStartTime=QDateTime::currentMSecsSinceEpoch();
+            }
+            break;
+        case Qt::Key_Up:
+            if(!character2->is_squating)
+            {
+                character2->setJumpDown(true);
+            }
             break;
         default:
             Scene::keyPressEvent(event);;
@@ -104,8 +145,21 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
         case Qt::Key_D:
             character1->setRightDown(false);
             break;
-        case Qt::Key_Space:
+        case Qt::Key_S:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
             character1->setPickDown(false);
+            character1->setSquatDown(false);
+            character1->is_squating=false;
+            if (QDateTime::currentMSecsSinceEpoch() - character1->m_squatStartTime > character1->JITTER_THRESHOLD)
+            {
+                character1->m_squatStartTime = 0;
+            }
+            break;
+        case Qt::Key_W:
+            character1->setJumpDown(false);
             break;
         default:
             Scene::keyReleaseEvent(event);
@@ -121,8 +175,21 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
         case Qt::Key_Right:
             character2->setRightDown(false);
             break;
-        case Qt::Key_Shift:
+        case Qt::Key_Down:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
             character2->setPickDown(false);
+            character2->setSquatDown(false);
+            character2->is_squating=false;
+            if (QDateTime::currentMSecsSinceEpoch() - character2->m_squatStartTime > character2->JITTER_THRESHOLD)
+            {
+                character2->m_squatStartTime = 0;
+            }
+            break;
+        case Qt::Key_Up:
+            character2->setJumpDown(false);
             break;
         default:
             Scene::keyReleaseEvent(event);
@@ -133,6 +200,25 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
 }
 
 void BattleScene::update() {
+    if (character1 != nullptr) {
+        if (character1->isPickDown() && !character1->is_squating) {
+            qint64 diff = QDateTime::currentMSecsSinceEpoch() - character1->m_squatStartTime;
+            if (diff >= 500) {
+                character1->is_squating = true;
+                character1->setSquatDown(true);
+            }
+        }
+    }
+//&& !character2->is_squating
+    if (character2 != nullptr) {
+        if (character2->isPickDown() ) {
+            qint64 diff = QDateTime::currentMSecsSinceEpoch() - character2->m_squatStartTime;
+            if (diff >= 500) {
+                character2->is_squating = true;
+                character2->setSquatDown(true);
+            }
+        }
+    }
     Scene::update();
 }
 

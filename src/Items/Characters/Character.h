@@ -18,7 +18,7 @@ public:
     // 添加角色类型标识
     enum CharacterType { TYPE_PLAYER1, TYPE_PLAYER2 };
     // 添加人物状态枚举
-    enum CharacterState { STATE_IDLE, STATE_MOVING ,STATE_JUMPING,STATE_SQUATING};
+    enum CharacterState { STATE_IDLE, STATE_MOVING ,STATE_JUMPING,STATE_SQUATING,STATE_FALLING};
 
     explicit Character(CharacterType type, QGraphicsItem *parent); // 修改构造函数
 
@@ -30,6 +30,12 @@ public:
 
     [[nodiscard]] bool isPickDown() const;
     void setPickDown(bool pickDown);
+
+    [[nodiscard]] bool isJumpDown() const;
+    void setJumpDown(bool jumpDown);
+
+    [[nodiscard]] bool isSquatDown() const;
+    void setSquatDown(bool squatDown);
 
     [[nodiscard]] const QPointF &getVelocity() const;
 
@@ -51,6 +57,12 @@ public:
     CharacterState getState() const { return m_state; }
     void setState(CharacterState state) { m_state = state; }
 
+    qreal m_squatStartTime=0;
+    bool is_squating;
+
+    const qint64 JITTER_THRESHOLD = 50;  // 50ms抖动阈值
+
+
 protected:
     Armor *armor{};
     QPointF velocity{};
@@ -63,12 +75,16 @@ protected:
     QGraphicsPixmapItem *squatingPixmapItem;
     // 当前人物状态
     CharacterState m_state;
+
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 
 private:
     bool leftDown{}, rightDown{}, pickDown{};
     bool lastPickDown{};
     bool picking{};
+    bool jumpDown{},squatDown{};
+
+
 };
 
 
