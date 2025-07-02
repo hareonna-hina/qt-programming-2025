@@ -22,7 +22,5 @@ MyGame::MyGame(QWidget *parent) : QMainWindow(parent) {
     // Adjust the QMainWindow size to tightly wrap the QGraphicsView
     //setFixedSize(view->sizeHint());
     battleScene->startLoop();
-    qDebug() << "场景尺寸:" << battleScene->sceneRect();
-    qDebug() << "视图尺寸:" << view->size();
 
 }

@@ -7,10 +7,58 @@
 
 Character::Character(CharacterType type, QGraphicsItem *parent)
     : Item(parent, ""), m_type(type) {
+    if(type==TYPE_PLAYER1)
+    {
+        // 加载静止状态的图片
+        idlePixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_idle.png"), this);
+        idlePixmapItem->setPos(0, 0);
+        idlePixmapItem->setVisible(true);
+
+        // 加载移动状态的图片
+        movingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_walk.png"), this);
+        movingPixmapItem->setPos(0, 0);
+        movingPixmapItem->setVisible(false);
+
+        // 加载跳跃状态的图片
+        jumpingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_jump.png"), this);
+        jumpingPixmapItem->setPos(0, 0);
+        jumpingPixmapItem->setVisible(false);
+
+        // 加载下蹲状态的图片
+        squatingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_squat.png"), this);
+        squatingPixmapItem->setPos(0, 0);
+        squatingPixmapItem->setVisible(false);
+    }
+    if (type==TYPE_PLAYER2)
+    {
+        // 加载静止状态的图片
+        idlePixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_idle.png"), this);
+        idlePixmapItem->setPos(0, 0);
+        idlePixmapItem->setVisible(true);
+
+        // 加载移动状态的图片
+        movingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_walk.png"), this);
+        movingPixmapItem->setPos(0, 0);
+        movingPixmapItem->setVisible(false);
+
+        // 加载跳跃状态的图片
+        jumpingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_jump.png"), this);
+        jumpingPixmapItem->setPos(0, 0);
+        jumpingPixmapItem->setVisible(false);
+
+        // 加载下蹲状态的图片
+        squatingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_squat.png"), this);
+        squatingPixmapItem->setPos(0, 0);
+        squatingPixmapItem->setVisible(false);
+    }
 //    ellipseItem = new QGraphicsEllipseItem(-5, -5, 10, 10, this);
 //    // Optionally, set some properties of the ellipse
 //    ellipseItem->setBrush(Qt::green);          // Fill color
 //    ellipseItem->setZValue(1);
+
+
+
+
 }
 
 bool Character::isLeftDown() const {
@@ -53,50 +101,103 @@ void Character::processInput() {
     if (m_type == TYPE_PLAYER1) {
         if (isLeftDown()) {  // 玩家1向左移动
             velocity.setX(velocity.x() - moveSpeed);
-            setTransform(QTransform().scale(1, 1));
+            setTransform(QTransform().scale(-1, 1));
         }
         if (isRightDown()) { // 玩家1向右移动
             velocity.setX(velocity.x() + moveSpeed);
-            setTransform(QTransform().scale(-1, 1));
+            setTransform(QTransform().scale(1, 1));
         }
         // 添加玩家1其他按键控制...
     } else { // 玩家2控制
         if (isLeftDown()) {  // 玩家2向左移动
             velocity.setX(velocity.x() - moveSpeed);
-            setTransform(QTransform().scale(1, 1));
+            setTransform(QTransform().scale(-1, 1));
         }
         if (isRightDown()) { // 玩家2向右移动
             velocity.setX(velocity.x() + moveSpeed);
-            setTransform(QTransform().scale(-1, 1));
+            setTransform(QTransform().scale(1, 1));
         }
         // 添加玩家2其他按键控制...
     }
 
     setVelocity(velocity);
 
-    if (!lastPickDown && pickDown) { // first time pickDown
+    if (!lastPickDown && pickDown)
+    { // first time pickDown
         picking = true;
-    } else {
+    }
+    else
+    {
         picking = false;
     }
     lastPickDown = pickDown;
+
+    // 根据速度更新人物状态
+    if (velocity.x() != 0 || velocity.y() != 0)
+    {
+        setState(STATE_MOVING);
+    }
+    else
+    {
+        setState(STATE_IDLE);
+    }
 }
 
 bool Character::isPicking() const {
     return picking;
 }
 
-Armor *Character::pickupArmor(Armor *newArmor) {
-    auto oldArmor = armor;
-    if (oldArmor != nullptr) {
-        oldArmor->unmount();
-        oldArmor->setPos(newArmor->pos());
-        oldArmor->setParentItem(parentItem());
+// Armor *Character::pickupArmor(Armor *newArmor) {
+//     auto oldArmor = armor;
+//     if (oldArmor != nullptr) {
+//         oldArmor->unmount();
+//         oldArmor->setPos(newArmor->pos());
+//         oldArmor->setParentItem(parentItem());
+//     }
+//     newArmor->setParentItem(this);
+//     newArmor->mountToParent(this);
+//     armor = newArmor;
+//     return oldArmor;
+// }
+
+void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
+    if (m_state == STATE_IDLE)
+    {
+        idlePixmapItem->setVisible(true);
+        movingPixmapItem->setVisible(false);
     }
-    newArmor->setParentItem(this);
-    newArmor->mountToParent(this);
-    armor = newArmor;
-    return oldArmor;
+    else if (m_state == STATE_MOVING)
+    {
+        idlePixmapItem->setVisible(false);
+        movingPixmapItem->setVisible(true);
+    }
+    else if (m_state == STATE_JUMPING)
+    {
+        idlePixmapItem->setVisible(false);
+        jumpingPixmapItem->setVisible(true);
+    }
+    else if (m_state == STATE_SQUATING)
+    {
+        idlePixmapItem->setVisible(false);
+        squatingPixmapItem->setVisible(true);
+    }
+
+    if (idlePixmapItem->isVisible())
+    {
+        idlePixmapItem->paint(painter, option, widget);
+    }
+    else if (movingPixmapItem->isVisible())
+    {
+        movingPixmapItem->paint(painter, option, widget);
+    }
+    else if (jumpingPixmapItem->isVisible())
+    {
+        jumpingPixmapItem->paint(painter, option, widget);
+    }
+    else if (squatingPixmapItem->isVisible())
+    {
+        squatingPixmapItem->paint(painter, option, widget);
+    }
 }
 
 

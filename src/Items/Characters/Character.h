@@ -9,25 +9,26 @@
 #include "../HeadEquipments/HeadEquipment.h"
 #include "../Armors/Armor.h"
 #include "../LegEquipments/LegEquipment.h"
+#include <QGraphicsPixmapItem>
+#include <QPointF>
 
 
 class Character : public Item {
 public:
     // 添加角色类型标识
     enum CharacterType { TYPE_PLAYER1, TYPE_PLAYER2 };
+    // 添加人物状态枚举
+    enum CharacterState { STATE_IDLE, STATE_MOVING ,STATE_JUMPING,STATE_SQUATING};
 
     explicit Character(CharacterType type, QGraphicsItem *parent); // 修改构造函数
 
     [[nodiscard]] bool isLeftDown() const;
-
     void setLeftDown(bool leftDown);
 
     [[nodiscard]] bool isRightDown() const;
-
     void setRightDown(bool rightDown);
 
     [[nodiscard]] bool isPickDown() const;
-
     void setPickDown(bool pickDown);
 
     [[nodiscard]] const QPointF &getVelocity() const;
@@ -42,13 +43,28 @@ public:
 
     CharacterType characterType() const { return m_type; } // 获取角色类型
 
+    void addEquipmentCard(Equipment *equipment);
+
+    void removeEquipmentCard(Equipment *equipment); // 把装备加入到装备槽中，减少人物绘图的复杂，让界面更简洁
+
+    // 获取和设置人物状态的方法
+    CharacterState getState() const { return m_state; }
+    void setState(CharacterState state) { m_state = state; }
+
 protected:
-    HeadEquipment *headEquipment{};
-    LegEquipment *legEquipment{};
     Armor *armor{};
     QPointF velocity{};
     CharacterType m_type; // 存储角色类型
-//    QGraphicsEllipseItem *ellipseItem; // for debugging
+    QList<Equipment*> equipmentCards;
+    // 用于存储不同状态的图片项
+    QGraphicsPixmapItem *idlePixmapItem;
+    QGraphicsPixmapItem *movingPixmapItem;
+    QGraphicsPixmapItem *jumpingPixmapItem;
+    QGraphicsPixmapItem *squatingPixmapItem;
+    // 当前人物状态
+    CharacterState m_state;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+
 private:
     bool leftDown{}, rightDown{}, pickDown{};
     bool lastPickDown{};

@@ -7,14 +7,16 @@
 
 #include "../Item.h"
 #include "../Mountable.h"
+#include "../Equipment.h"
 
-class Armor : public Item, public Mountable {
+class Armor : public Equipment {
+private:
+    QString pixmapPath_1;
 public:
-    explicit Armor(QGraphicsItem *parent, const QString &pixmapPath);
+    explicit Armor(QGraphicsItem *parent, const QString& pixmapPath);
 
-    void mountToParent(Character* character) override;
+    EquipmentCard* createCard() const override;
 
-    void unmount() override;
 };
 
 

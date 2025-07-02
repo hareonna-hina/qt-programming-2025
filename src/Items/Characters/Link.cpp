@@ -31,11 +31,11 @@ Link::Link(Character::CharacterType type, QGraphicsItem *parent)
         armor->mountToParent(this);
     }
 */
-    headEquipment = new CapOfTheHero(this);
-    legEquipment = new WellWornTrousers(this);
-    armor = new OldShirt(this);
-    headEquipment->mountToParent(this);
-    legEquipment->mountToParent(this);
-    armor->mountToParent(this);
+    // headEquipment = new CapOfTheHero(this);
+    // legEquipment = new WellWornTrousers(this);
+    // armor = new OldShirt(this);
+    // headEquipment->mountToParent(this);
+    // legEquipment->mountToParent(this);
+    // armor->mountToParent(this);
 
 }

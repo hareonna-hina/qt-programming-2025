@@ -9,6 +9,7 @@
 #include "Scene.h"
 #include "../Items/Maps/Map.h"
 #include "../Items/Characters/Character.h"
+#include "../Items/StatusBar.h"
 
 class BattleScene : public Scene {
 Q_OBJECT
@@ -41,6 +42,8 @@ private:
     Character *character1;
     Character *character2;
     Armor *spareArmor;
+    StatusBar* statusBar_1;
+    StatusBar* statusBar_2;
 };
 
 

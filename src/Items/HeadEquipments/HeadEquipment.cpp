@@ -4,11 +4,8 @@
 
 #include "HeadEquipment.h"
 
-HeadEquipment::HeadEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {
-}
+HeadEquipment::HeadEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Equipment(parent, pixmapPath),pixmapPath_1(pixmapPath) {}
 
-void HeadEquipment::mountToParent(Character *character) {
-    Mountable::mountToParent(character);
-    setScale(0.4);
-    setPos(-30, -210);
+EquipmentCard* HeadEquipment::createCard() const{
+    return new EquipmentCard(pixmapPath_1);
 }

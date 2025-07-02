@@ -410,11 +410,21 @@ CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/mocs_compilation.
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+ D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
  C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\qt_programming_2024_autogen\SNE2VJ5FQV/moc_Scene.cpp \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h

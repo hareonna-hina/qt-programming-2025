@@ -20,6 +20,9 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.cpp \
@@ -36,6 +39,8 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp \
@@ -214,6 +219,7 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   D:/qtt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QPainter \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qaction.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qbitmap.h \
@@ -253,6 +259,7 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   D:/qtt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsView \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \
@@ -467,6 +474,8 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qtypeinfo.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.cpp:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h:
+
 D:/qtt/6.5.3/mingw_64/include/QtGui/qcursor.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.cpp:
@@ -511,6 +520,28 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/WellWornTrou
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h:
 
+D:/cmake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h:
+
+D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtGui/qpixelformat.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/q20memory.h:
+
+D:/cmake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qsize.h:
+
+D:/cmake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp:
+
 D:/qtt/6.5.3/mingw_64/include/QtCore/qversiontagging.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.cpp:
@@ -545,11 +576,15 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Battlefield.h:
 
-D:/cmake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake:
-
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp:
-
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qstringconverter_base.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qfloat16.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp:
 
@@ -558,8 +593,6 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp:
 D:/qtt/6.5.3/mingw_64/include/QtCore/QObject:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h:
-
-D:/cmake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h:
 
@@ -578,8 +611,6 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qobject.h:
 D:/cmake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-D:/cmake/share/cmake-4.1/Modules/Compiler/GNU.cmake:
 
 D:/qtt/6.5.3/mingw_64/include/QtWidgets/qframe.h:
 
@@ -601,23 +632,17 @@ D:/cmake/share/cmake-4.1/Modules/CMakeRCInformation.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake:
 
+D:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/Compiler/GNU-C.cmake:
 
-D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
-
-D:/cmake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:
-
-D:/qtt/6.5.3/mingw_64/include/QtGui/qpixelformat.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/q20memory.h:
-
-D:/cmake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:
-
-D:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:
-
 D:/cmake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/Compiler/GNU.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake:
 
@@ -692,10 +717,6 @@ D:/cmake/share/cmake-4.1/Modules/Platform/Windows-GNU-CXX.cmake:
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qsize.h:
-
-D:/cmake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/Platform/Windows.cmake:
 
@@ -806,10 +827,6 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qmalloc.h:
 D:/qtt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qflags.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qstringconverter_base.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qfloat16.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qforeach.h:
 
@@ -971,6 +988,10 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent:
 
+D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap:
+
 D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform:
 
 D:/qtt/6.5.3/mingw_64/include/QtGui/qpainter.h:
@@ -1033,6 +1054,10 @@ D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem:
 
 D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem:
 
+D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem:
+
 D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets.cmake:
@@ -1070,8 +1095,6 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-rel
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
-
-D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
@@ -1156,8 +1179,6 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
-
-D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 

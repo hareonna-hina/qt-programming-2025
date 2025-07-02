@@ -6,5 +6,15 @@
         <file>Items/LegEquipments/WellWornTrousers/BotW_Well-Worn_Trousers_Icon.png</file>
         <file>Items/Maps/Battlefield/g9tOqth.png</file>
         <file>Items/Maps/Battlefield/map.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_beige_idle.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_beige_jump.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_beige_squat.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_beige_walk.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_green_idle.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_green_jump.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_green_squat.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_green_walk.png</file>
+        <file>Items/Maps/Battlefield/statusbar1.png</file>
+        <file>Items/Maps/Battlefield/statusbar2.png</file>
     </qresource>
 </RCC>

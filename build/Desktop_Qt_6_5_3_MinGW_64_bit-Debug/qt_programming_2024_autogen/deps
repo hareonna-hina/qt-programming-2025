@@ -18,6 +18,9 @@ qt_programming_2024_autogen/timestamp: \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.cpp \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h \
+	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp \
+	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.cpp \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.cpp \
@@ -34,6 +37,8 @@ qt_programming_2024_autogen/timestamp: \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp \
+	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.h \
 	C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp \
@@ -211,6 +216,7 @@ qt_programming_2024_autogen/timestamp: \
 	D:/qtt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/QPainter \
+	D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/qaction.h \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/qbitmap.h \
@@ -250,6 +256,7 @@ qt_programming_2024_autogen/timestamp: \
 	D:/qtt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
 	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
 	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
+	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
 	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsView \
 	D:/qtt/6.5.3/mingw_64/include/QtWidgets/QMainWindow \

@@ -4,11 +4,9 @@
 
 #include "LegEquipment.h"
 
-LegEquipment::LegEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Item(parent, pixmapPath) {
+LegEquipment::LegEquipment(QGraphicsItem *parent, const QString &pixmapPath) : Equipment(parent, pixmapPath),pixmapPath_1(pixmapPath) {}
+
+EquipmentCard* LegEquipment::createCard() const{
+    return new EquipmentCard(pixmapPath_1);
 }
 
-void LegEquipment::mountToParent(Character *character) {
-    Mountable::mountToParent(character);
-    setScale(0.8);
-    setPos(-60, -110);
-}

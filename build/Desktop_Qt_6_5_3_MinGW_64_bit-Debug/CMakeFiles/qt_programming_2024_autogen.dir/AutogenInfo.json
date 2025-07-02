@@ -301,6 +301,18 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h",
+			"MU",
+			"7O23G427QC/moc_Equipment.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h",
+			"MU",
+			"7O23G427QC/moc_EquipmentCard.cpp",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.h",
 			"MU",
 			"6DSFGWXEQO/moc_CapOfTheHero.cpp",
@@ -346,6 +358,12 @@
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h",
 			"MU",
 			"7O23G427QC/moc_Mountable.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h",
+			"MU",
+			"7O23G427QC/moc_StatusBar.cpp",
 			null
 		],
 		[
@@ -455,6 +473,11 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.cpp",
 			"MU",
 			null
@@ -491,6 +514,11 @@
 		],
 		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp",
 			"MU",
 			null
 		],

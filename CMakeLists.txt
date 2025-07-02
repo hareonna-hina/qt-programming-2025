@@ -47,6 +47,11 @@ add_executable(qt_programming_2024 src/main.cpp
         src/Items/Mountable.h
         src/Items/Armors/FlamebreakerArmor.cpp
         src/Items/Armors/FlamebreakerArmor.h
+        src/Items/EquipmentCard.h
+        src/Items/EquipmentCard.cpp
+        src/Items/Equipment.h
+        src/Items/StatusBar.h
+        src/Items/StatusBar.cpp
 
 
 

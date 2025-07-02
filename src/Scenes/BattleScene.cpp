@@ -7,6 +7,7 @@
 #include "../Items/Characters/Link.h"
 #include "../Items/Maps/Battlefield.h"
 #include "../Items/Armors/FlamebreakerArmor.h"
+#include "../Items/StatusBar.h"
 
 BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     // This is useful if you want the scene to have the exact same dimensions as the view
@@ -31,8 +32,18 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     character1->setPos(map->getSpawnPos());   // 玩家1起始位置
     character2->setPos(map->getSpawnPos()+QPointF(100,0));   // 玩家2起始位置
 
-    spareArmor->unmount();
-    spareArmor->setPos(100, map->getFloorHeight());
+    // 创建玩家1的状态栏
+    statusBar_1 = new StatusBar(StatusBar::PLAYER_1, ":/Items/Maps/statusbar1.png", this);
+    statusBar_1->setGeometry(10, 10, 200, 100);
+
+
+    // 创建玩家2的状态栏
+    statusBar_2 = new StatusBar(StatusBar::PLAYER_2, ":/path/to/statusbar_background.png", this);
+    statusBar_2->setGeometry(1060, 10, 200, 100);
+
+
+    // spareArmor->unmount();
+    // spareArmor->setPos(100, map->getFloorHeight());
 
 }
 
@@ -144,9 +155,9 @@ void BattleScene::processPicking() {
     if (character1 != nullptr && character1->isPicking()) {
 
         auto mountable = findNearestUnmountedMountable(character1->pos(), 100.);
-        if (mountable != nullptr) {
-            spareArmor = dynamic_cast<Armor *>(pickupMountable(character1, mountable));
-        }
+        // if (mountable != nullptr) {
+        //     spareArmor = dynamic_cast<Armor *>(pickupMountable(character1, mountable));
+        // }
     }
 
     // 处理玩家2的拾取
@@ -154,9 +165,9 @@ void BattleScene::processPicking() {
 
         auto mountable = findNearestUnmountedMountable(character2->pos(), 100.);
 
-        if (mountable != nullptr) {
-            spareArmor = dynamic_cast<Armor *>(pickupMountable(character2, mountable));
-        }
+        // if (mountable != nullptr) {
+        //     spareArmor = dynamic_cast<Armor *>(pickupMountable(character2, mountable));
+        // }
     }
 }
 
@@ -179,10 +190,11 @@ Mountable *BattleScene::findNearestUnmountedMountable(const QPointF &pos, qreal 
     return nearest;
 }
 
-Mountable *BattleScene::pickupMountable(Character *character, Mountable *mountable) {
-    // Limitation: currently only supports armor
-    if (auto armor = dynamic_cast<Armor *>(mountable)) {
-        return character->pickupArmor(armor);
-    }
-    return nullptr;
-}
+// Mountable *BattleScene::pickupMountable(Character *character, Mountable *mountable) {
+//     // Limitation: currently only supports armor
+//     if (auto armor = dynamic_cast<Armor *>(mountable)) {
+//         return character->pickupArmor(armor);
+//     }
+//     return nullptr;
+// }
+

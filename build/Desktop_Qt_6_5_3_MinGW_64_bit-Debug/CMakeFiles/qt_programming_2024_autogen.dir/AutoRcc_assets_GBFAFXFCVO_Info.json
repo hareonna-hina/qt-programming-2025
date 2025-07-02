@@ -10,10 +10,20 @@
 	"INPUTS" : 
 	[
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/HeadEquipments/CapOfTheHero/BotW_Cap_of_the_Hero_Icon.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_jump.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_idle.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_walk.png",
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/BotW_Flamebreaker_Armor_Icon.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_squat.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_idle.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_squat.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_jump.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_walk.png",
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/OldShirt/BotW_Old_Shirt_Icon.png",
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/g9tOqth.png",
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/map.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/statusbar2.png",
+		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/statusbar1.png",
 		"C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/LegEquipments/WellWornTrousers/BotW_Well-Worn_Trousers_Icon.png"
 	],
 	"LOCK_FILE" : "C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/qt_programming_2024_autogen.dir/AutoRcc_assets_GBFAFXFCVO_Lock.lock",

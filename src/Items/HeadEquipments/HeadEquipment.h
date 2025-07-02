@@ -8,12 +8,16 @@
 
 #include "../Item.h"
 #include "../Mountable.h"
+#include "../Equipment.h"
 
-class HeadEquipment: public Item, public Mountable {
+class HeadEquipment: public Equipment {
+private:
+    QString pixmapPath_1;
 public:
     explicit HeadEquipment(QGraphicsItem *parent, const QString &pixmapPath);
 
-    void mountToParent(Character *character) override;
+    EquipmentCard* createCard() const override;
+
 };
 
 

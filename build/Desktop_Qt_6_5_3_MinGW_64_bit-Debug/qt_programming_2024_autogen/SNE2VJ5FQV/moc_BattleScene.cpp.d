@@ -2,11 +2,14 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-
   C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/qt_programming_2024_autogen/moc_predefs.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
@@ -132,6 +135,7 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-
   D:/qtt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QPainter \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qbrush.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qcolor.h \
@@ -166,6 +170,7 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-
   D:/qtt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \

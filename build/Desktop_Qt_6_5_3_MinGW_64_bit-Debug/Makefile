@@ -322,6 +322,30 @@ src/Items/Characters/Link.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Link.cpp.s
 .PHONY : src/Items/Characters/Link.cpp.s
 
+src/Items/EquipmentCard.obj: src/Items/EquipmentCard.cpp.obj
+.PHONY : src/Items/EquipmentCard.obj
+
+# target to build an object file
+src/Items/EquipmentCard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/EquipmentCard.cpp.obj
+.PHONY : src/Items/EquipmentCard.cpp.obj
+
+src/Items/EquipmentCard.i: src/Items/EquipmentCard.cpp.i
+.PHONY : src/Items/EquipmentCard.i
+
+# target to preprocess a source file
+src/Items/EquipmentCard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/EquipmentCard.cpp.i
+.PHONY : src/Items/EquipmentCard.cpp.i
+
+src/Items/EquipmentCard.s: src/Items/EquipmentCard.cpp.s
+.PHONY : src/Items/EquipmentCard.s
+
+# target to generate assembly for a file
+src/Items/EquipmentCard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/EquipmentCard.cpp.s
+.PHONY : src/Items/EquipmentCard.cpp.s
+
 src/Items/HeadEquipments/CapOfTheHero.obj: src/Items/HeadEquipments/CapOfTheHero.cpp.obj
 .PHONY : src/Items/HeadEquipments/CapOfTheHero.obj
 
@@ -514,6 +538,30 @@ src/Items/Mountable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/Mountable.cpp.s
 .PHONY : src/Items/Mountable.cpp.s
 
+src/Items/StatusBar.obj: src/Items/StatusBar.cpp.obj
+.PHONY : src/Items/StatusBar.obj
+
+# target to build an object file
+src/Items/StatusBar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.obj
+.PHONY : src/Items/StatusBar.cpp.obj
+
+src/Items/StatusBar.i: src/Items/StatusBar.cpp.i
+.PHONY : src/Items/StatusBar.i
+
+# target to preprocess a source file
+src/Items/StatusBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.i
+.PHONY : src/Items/StatusBar.cpp.i
+
+src/Items/StatusBar.s: src/Items/StatusBar.cpp.s
+.PHONY : src/Items/StatusBar.s
+
+# target to generate assembly for a file
+src/Items/StatusBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qt_programming_2024.dir\build.make CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.s
+.PHONY : src/Items/StatusBar.cpp.s
+
 src/MyGame.obj: src/MyGame.cpp.obj
 .PHONY : src/MyGame.obj
 
@@ -642,6 +690,9 @@ help:
 	@echo ... src/Items/Characters/Link.obj
 	@echo ... src/Items/Characters/Link.i
 	@echo ... src/Items/Characters/Link.s
+	@echo ... src/Items/EquipmentCard.obj
+	@echo ... src/Items/EquipmentCard.i
+	@echo ... src/Items/EquipmentCard.s
 	@echo ... src/Items/HeadEquipments/CapOfTheHero.obj
 	@echo ... src/Items/HeadEquipments/CapOfTheHero.i
 	@echo ... src/Items/HeadEquipments/CapOfTheHero.s
@@ -666,6 +717,9 @@ help:
 	@echo ... src/Items/Mountable.obj
 	@echo ... src/Items/Mountable.i
 	@echo ... src/Items/Mountable.s
+	@echo ... src/Items/StatusBar.obj
+	@echo ... src/Items/StatusBar.i
+	@echo ... src/Items/StatusBar.s
 	@echo ... src/MyGame.obj
 	@echo ... src/MyGame.i
 	@echo ... src/MyGame.s
