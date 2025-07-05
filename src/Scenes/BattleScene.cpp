@@ -30,7 +30,7 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
 
     // 设置角色起始位置
     // 设置不同位置
-    character1->setPos(110,440);   // 玩家1起始位置
+    character1->setPos(110,30);   // 玩家1起始位置
     character2->setPos(1180,440);   // 玩家2起始位置
 
     // 创建玩家1的状态栏
@@ -86,9 +86,11 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
             }
             break;
         case Qt::Key_W:
-            if(!character1->is_squating)
+            if(event->isAutoRepeat()) return;
+            if(!character1->is_squating&&!character1->is_jumping&&character1->getOnGround())
             {
                 character1->setJumpDown(true);
+                character1->is_jumping=true;
             }
             break;
         default:
@@ -123,7 +125,8 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
             }
             break;
         case Qt::Key_Up:
-            if(!character2->is_squating)
+            if(event->isAutoRepeat()) return;
+            if(!character2->is_squating&&!character2->is_jumping&&character2->getOnGround())
             {
                 character2->setJumpDown(true);
             }
@@ -159,6 +162,7 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
             }
             break;
         case Qt::Key_W:
+            if(event->isAutoRepeat()) return;
             character1->setJumpDown(false);
             break;
         default:
@@ -189,6 +193,7 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
             }
             break;
         case Qt::Key_Up:
+            if(event->isAutoRepeat()) return;
             character2->setJumpDown(false);
             break;
         default:
@@ -208,8 +213,9 @@ void BattleScene::update() {
                 character1->setSquatDown(true);
             }
         }
+        character1->applyGravity(deltaTime);
+        character1->checkCollisions(map);
     }
-//&& !character2->is_squating
     if (character2 != nullptr) {
         if (character2->isPickDown() ) {
             qint64 diff = QDateTime::currentMSecsSinceEpoch() - character2->m_squatStartTime;
@@ -218,6 +224,8 @@ void BattleScene::update() {
                 character2->setSquatDown(true);
             }
         }
+        character2->applyGravity(deltaTime);
+        character2->checkCollisions(map);
     }
     Scene::update();
 }

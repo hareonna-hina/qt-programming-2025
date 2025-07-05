@@ -1484,9 +1484,16 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QPointF \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QRect \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QSize \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/QSizeF \
   D:/qtt/6.5.3/mingw_64/include/QtCore/q20memory.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qalgorithms.h \
@@ -1503,6 +1510,7 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qchar.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcompare.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -1513,8 +1521,10 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qdebug.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qflags.h \
@@ -1526,11 +1536,13 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qglobalstatic.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qhash.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qiodevice.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qiodevicebase.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qiterable.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qiterator.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qline.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qlogging.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qmalloc.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qmap.h \
@@ -1540,6 +1552,7 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qmetatype.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qminmax.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qnamespace.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qnumeric.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qobject.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qobject_impl.h \
@@ -1548,6 +1561,7 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qoverload.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qpair.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qpoint.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qpointer.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qrect.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qrefcount.h \
@@ -1590,40 +1604,52 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: C:/Us
   D:/qtt/6.5.3/mingw_64/include/QtCore/qtversionchecks.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qtypeinfo.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qtypes.h \
+  D:/qtt/6.5.3/mingw_64/include/QtCore/qurl.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qutf8stringview.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qvariant.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qversiontagging.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/qxptype_traits.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QPainter \
   D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qbrush.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qcolor.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qevent.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qfont.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qfontinfo.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qfontmetrics.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qimage.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpaintdevice.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpainter.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpainterpath.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpen.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpixelformat.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qpointingdevice.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qpolygon.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qregion.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qrgb.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qrgba64.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qscreen.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qtextoption.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qtgui-config.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qtguiglobal.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qtransform.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qvector2d.h \
+  D:/qtt/6.5.3/mingw_64/include/QtGui/qvectornd.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qtt/6.5.3/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1848,6 +1874,7 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Link.cpp.obj: C:/Users/B
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/WellWornTrousers.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h \
@@ -1987,7 +2014,9 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Link.cpp.obj: C:/Users/B
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -5036,6 +5065,7 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Mountable.cpp.obj: C:/Users/Bocchi/
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
@@ -5175,7 +5205,9 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Mountable.cpp.obj: C:/Users/Bocchi/
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsEllipseItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsItem \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qtt/6.5.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -8023,9 +8055,9 @@ D:/qtt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uni
 
 D:/qtt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h:
 
-D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h:
-
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h:
 
 D:/qtt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype:
 
@@ -8155,6 +8187,10 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.h
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.cpp:
 
+D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h:
+
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.cpp:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h:
@@ -8166,10 +8202,6 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp:
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qcoreapplication.h:
 

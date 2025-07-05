@@ -13,6 +13,12 @@ public:
     explicit Battlefield(QGraphicsItem *parent= nullptr);
 
     qreal getFloorHeight() override;
+
+    virtual bool isSolidAt(const QRectF& rect) const override;
+
+    virtual qreal getFloorHeightAt(qreal x) const override;
+
+    virtual qreal getCeilingHeight() const override;
 };
 
 

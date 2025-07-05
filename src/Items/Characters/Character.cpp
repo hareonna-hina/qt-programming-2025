@@ -4,7 +4,8 @@
 
 #include <QTransform>
 #include "Character.h"
-
+#include <QDateTime>
+#include <QKeyEvent>
 Character::Character(CharacterType type, QGraphicsItem *parent)
     : Item(parent, ""), m_type(type),is_squating(false) {
     if(type==TYPE_PLAYER1)
@@ -111,28 +112,43 @@ void Character::processInput() {
     const auto moveSpeed = 0.3;
 
     // 根据角色类型分配不同按键
-    if (m_type == TYPE_PLAYER1) {
-        if (isLeftDown()) {  // 玩家1向左移动
+    if (m_type == TYPE_PLAYER1)
+    {
+        if (isLeftDown())
+        {  // 玩家1向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
             //setVelocity(velocity);
         }
-        if (isRightDown()) { // 玩家1向右移动
+        if (isRightDown())
+        { // 玩家1向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
             //setVelocity(velocity);
+        }
+        if(isJumpDown()&&!is_jumping)
+        {
+            velocity.setY(JUMPING_SPEED);
         }
         // 添加玩家1其他按键控制...
-    } else { // 玩家2控制
-        if (isLeftDown()) {  // 玩家2向左移动
+    }
+    else
+    { // 玩家2控制
+        if (isLeftDown())
+        {  // 玩家2向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
             //setVelocity(velocity);
         }
-        if (isRightDown()) { // 玩家2向右移动
+        if (isRightDown())
+        { // 玩家2向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
             //setVelocity(velocity);
+        }
+        if(isJumpDown()&&!is_jumping)
+        {
+            velocity.setY(JUMPING_SPEED);
         }
         // 添加玩家2其他按键控制...
     }
@@ -150,22 +166,41 @@ void Character::processInput() {
     lastPickDown = pickDown;
 
     // 根据速度更新人物状态
-    qDebug()<<"squat:"<<is_squating;
     if(is_squating)
     {
+        if(!first_set_y)
+        {
+            first_set_y=true;
+            setPos(x(),y()+16);
+        }
         setState(STATE_SQUATING);
-        qDebug()<<"3";
     }
-    else if((velocity.x()!=0||velocity.y()!=0)&&!is_squating)
+    else if(velocity.y()!=0&&!is_squating)
     {
+        if(m_state==STATE_SQUATING)
+        {
+            setPos(x(),y()-16);
+            first_set_y=false;
+        }
+        setState(STATE_JUMPING);
+    }
+    else if((velocity.x()!=0&&velocity.y()==0)&&!is_squating)
+    {
+        if(m_state==STATE_SQUATING)
+        {
+            setPos(x(),y()-16);
+            first_set_y=false;
+        }
         setState(STATE_MOVING);
-        qDebug()<<"1";
     }
     else
     {
+        if(m_state==STATE_SQUATING)
+        {
+            setPos(x(),y()-16);
+            first_set_y=false;
+        }
         setState(STATE_IDLE);
-        qDebug()<<"2";
-        qDebug()<<"squat:"<<is_squating;
     }
     update();
 
@@ -175,18 +210,6 @@ bool Character::isPicking() const {
     return picking;
 }
 
-// Armor *Character::pickupArmor(Armor *newArmor) {
-//     auto oldArmor = armor;
-//     if (oldArmor != nullptr) {
-//         oldArmor->unmount();
-//         oldArmor->setPos(newArmor->pos());
-//         oldArmor->setParentItem(parentItem());
-//     }
-//     newArmor->setParentItem(this);
-//     newArmor->mountToParent(this);
-//     armor = newArmor;
-//     return oldArmor;
-// }
 
 void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
     if (m_state == STATE_IDLE)
@@ -235,6 +258,123 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         squatingPixmapItem->paint(painter, option, widget);
     }
     update();
+}
+
+void Character::applyGravity(qreal deltaTime)
+{
+    if(!m_isGrounded)
+    {
+        airTime+=0.025;
+        velocity.setY(velocity.y()+GRAVITY*airTime);
+        if(velocity.y()>=MAX_FALL_SPEED)
+        {
+            velocity.setY(MAX_FALL_SPEED);
+        }
+    }
+    else
+    {
+        velocity.setY(0);
+        airTime=0;
+        is_jumping=false;
+    }
+    setY(y()+velocity.y()*airTime);
+    if(TYPE_PLAYER1)
+    {
+        qDebug()<<velocity.y();
+    }
+    update();
+}
+
+QRectF Character::collisionRect() const
+{
+    return QRectF(0,0,COLLISION_SIZE,COLLISION_SIZE);
+}
+
+void Character::checkCollisions(Map* map)
+{
+    if(!map)
+        return;
+    QRectF charRect=collisionRect().translated(pos());
+    qreal groundY=map->getFloorHeightAt(charRect.center().x());
+    if(charRect.bottom()>=groundY)
+    {
+        setY(groundY-COLLISION_SIZE);
+        m_isGrounded=true;
+        velocity.setY(0);
+    }
+    else
+    {
+        m_isGrounded=false;
+    }
+
+    qreal ceilingY=map->getCeilingHeight();
+    if(charRect.top()<=ceilingY)
+    {
+        setY(ceilingY);
+        velocity.setY(0);
+    }
+
+    if(m_isGrounded)
+    {
+        QRectF probeRect(charRect.center().x()-5,
+                         charRect.bottom(),
+                         10,
+                         10);
+
+        if(!map->isSolidAt(probeRect))
+        {
+            m_isGrounded=false;
+        }
+    }
+
+    qreal mapLeft=0;
+    qreal mapRight=1280;
+
+    if (charRect.left() <= mapLeft+charRect.width())
+    {
+        setX(charRect.width());
+        velocity.setX(0); // 停止水平移动
+        // qDebug()<<charRect.bottom();
+        // qDebug()<<charRect.top();
+        // qDebug()<<charRect.right();
+        // qDebug()<<charRect.left();
+    }
+    // 右侧边界检测
+    if (charRect.right() > mapRight)
+    {
+        setX(1280 - charRect.width());
+        velocity.setX(0); // 停止水平移动
+    }
+
+    //游戏里的地形障碍设置
+    if(charRect.right()>=190&&charRect.right()<=300&&qAbs(charRect.bottom()-504)<0.1&&qAbs(charRect.top()-440)<0.1)//地图左边第一个台阶的水平检测
+    {
+        setX(128);
+        velocity.setX(0);
+    }
+    if(charRect.left()<=1218&&charRect.left()>=1128&&qAbs(charRect.bottom()-504)<0.1&&qAbs(charRect.top()-440)<0.1)//地图右边第一个台阶的水平检测
+    {
+        setX(1218);
+        velocity.setX(0);
+    }
+
+    if(charRect.right()>=254&&charRect.right()<=364&&charRect.bottom()>=440&&velocity.y()>=0)//地图左边第二个台阶的水平检测
+    {
+        setX(192);
+        setY(376);
+        velocity.setX(0);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+    if(charRect.left()<=1154&&charRect.left()>=1064&&qAbs(charRect.bottom()-440)<0.1&&qAbs(charRect.top()-376)<0.1)//地图右边第二个台阶的水平检测
+    {
+        setX(1154);
+        setY(376);
+        velocity.setX(0);
+        velocity.setY(0);
+    }
+
+
 }
 
 

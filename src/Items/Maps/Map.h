@@ -20,6 +20,12 @@ public:
     virtual qreal getFloorHeight(); // Need to rewrite to support multiple platforms
 
     virtual QPointF getSpawnPos();
+
+    virtual qreal getFloorHeightAt(qreal x) const=0;
+
+    virtual bool isSolidAt(const QRectF& rect) const=0;
+
+    virtual qreal getCeilingHeight() const=0;
 };
 
 

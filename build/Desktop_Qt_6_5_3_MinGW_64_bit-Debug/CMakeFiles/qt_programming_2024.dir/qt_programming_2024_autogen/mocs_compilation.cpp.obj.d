@@ -422,6 +422,7 @@ CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/mocs_compilation.
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
  D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \

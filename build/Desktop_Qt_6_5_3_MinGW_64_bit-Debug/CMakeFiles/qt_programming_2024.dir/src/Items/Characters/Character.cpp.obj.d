@@ -367,4 +367,36 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QPointF \
- D:/qtt/6.5.3/mingw_64/include/QtCore/qpoint.h
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qpoint.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
+ D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
+ D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/QKeyEvent \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qevent.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qcoreevent.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qiodevice.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qpointer.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qurl.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qeventpoint.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qvector2d.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qvectornd.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qscreen.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qobject.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QRect \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qrect.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QSize \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qsize.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QSizeF \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qkeysequence.h

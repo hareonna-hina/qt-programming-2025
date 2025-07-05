@@ -11,6 +11,7 @@
 #include "../LegEquipments/LegEquipment.h"
 #include <QGraphicsPixmapItem>
 #include <QPointF>
+#include "../Maps/Map.h"
 
 
 class Character : public Item {
@@ -53,14 +54,24 @@ public:
 
     void removeEquipmentCard(Equipment *equipment); // 把装备加入到装备槽中，减少人物绘图的复杂，让界面更简洁
 
+    void checkCollisions(Map* map);
+    QRectF collisionRect() const;
+    void applyGravity(qreal deltaTime);
+
     // 获取和设置人物状态的方法
     CharacterState getState() const { return m_state; }
     void setState(CharacterState state) { m_state = state; }
 
     qreal m_squatStartTime=0;
     bool is_squating;
+    bool first_set_y=false;
 
     const qint64 JITTER_THRESHOLD = 50;  // 50ms抖动阈值
+
+    bool getOnGround(){return m_isGrounded;};
+
+    bool is_jumping=false;
+
 
 
 protected:
@@ -83,6 +94,12 @@ private:
     bool lastPickDown{};
     bool picking{};
     bool jumpDown{},squatDown{};
+    bool m_isGrounded=false;
+    const qreal GRAVITY=5;
+    const qreal MAX_FALL_SPEED=10;
+    const int COLLISION_SIZE=64;
+    const qreal JUMPING_SPEED=-1.05;//初始跳跃速度
+    qreal airTime=0;
 
 
 };
