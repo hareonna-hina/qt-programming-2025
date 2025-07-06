@@ -71,6 +71,7 @@ include CMakeFiles/qt_programming_2024.dir/flags.make
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/assets.qrc
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: CMakeFiles/qt_programming_2024_autogen.dir/AutoRcc_assets_GBFAFXFCVO_Info.json
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/HeadEquipments/CapOfTheHero/BotW_Cap_of_the_Hero_Icon.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_invisible.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_jump.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_idle.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_walk.png
@@ -78,6 +79,7 @@ qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/q
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_squat.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_idle.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_squat.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_invisible.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_jump.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_walk.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/OldShirt/BotW_Old_Shirt_Icon.png

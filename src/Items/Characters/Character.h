@@ -19,7 +19,7 @@ public:
     // 添加角色类型标识
     enum CharacterType { TYPE_PLAYER1, TYPE_PLAYER2 };
     // 添加人物状态枚举
-    enum CharacterState { STATE_IDLE, STATE_MOVING ,STATE_JUMPING,STATE_SQUATING,STATE_FALLING};
+    enum CharacterState { STATE_IDLE, STATE_MOVING ,STATE_JUMPING,STATE_SQUATING};
 
     explicit Character(CharacterType type, QGraphicsItem *parent); // 修改构造函数
 
@@ -65,12 +65,15 @@ public:
     qreal m_squatStartTime=0;
     bool is_squating;
     bool first_set_y=false;
+    bool is_set_invisible=false;
 
     const qint64 JITTER_THRESHOLD = 50;  // 50ms抖动阈值
 
     bool getOnGround(){return m_isGrounded;};
 
     bool is_jumping=false;
+
+    void differentTerrain(Map* map);
 
 
 
@@ -84,6 +87,7 @@ protected:
     QGraphicsPixmapItem *movingPixmapItem;
     QGraphicsPixmapItem *jumpingPixmapItem;
     QGraphicsPixmapItem *squatingPixmapItem;
+    QGraphicsPixmapItem *invisiblePixmapItem;
     // 当前人物状态
     CharacterState m_state;
 
@@ -98,8 +102,9 @@ private:
     const qreal GRAVITY=5;
     const qreal MAX_FALL_SPEED=10;
     const int COLLISION_SIZE=64;
-    const qreal JUMPING_SPEED=-1.05;//初始跳跃速度
+    const qreal JUMPING_SPEED=-0.4;//初始跳跃速度
     qreal airTime=0;
+    bool is_accelerating=false;
 
 
 };

@@ -16,5 +16,7 @@
         <file>Items/Armors/FlamebreakerArmor/character_green_walk.png</file>
         <file>Items/Maps/Battlefield/statusbar1.png</file>
         <file>Items/Maps/Battlefield/statusbar2.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_beige_invisible.png</file>
+        <file>Items/Armors/FlamebreakerArmor/character_green_invisible.png</file>
     </qresource>
 </RCC>

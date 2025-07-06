@@ -30,7 +30,7 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
 
     // 设置角色起始位置
     // 设置不同位置
-    character1->setPos(110,30);   // 玩家1起始位置
+    character1->setPos(110,440);   // 玩家1起始位置
     character2->setPos(1180,440);   // 玩家2起始位置
 
     // 创建玩家1的状态栏
@@ -215,6 +215,7 @@ void BattleScene::update() {
         }
         character1->applyGravity(deltaTime);
         character1->checkCollisions(map);
+        character1->differentTerrain(map);
     }
     if (character2 != nullptr) {
         if (character2->isPickDown() ) {
@@ -226,6 +227,7 @@ void BattleScene::update() {
         }
         character2->applyGravity(deltaTime);
         character2->checkCollisions(map);
+        character2->differentTerrain(map);
     }
     Scene::update();
 }

@@ -29,6 +29,11 @@ Character::Character(CharacterType type, QGraphicsItem *parent)
         squatingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_squat.png"), this);
         squatingPixmapItem->setPos(0, 0);
         squatingPixmapItem->setVisible(false);
+
+        //下蹲时的隐身
+        invisiblePixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_beige_invisible.png"), this);
+        invisiblePixmapItem->setPos(0, 0);
+        invisiblePixmapItem->setVisible(false);
     }
     if (type==TYPE_PLAYER2)
     {
@@ -51,6 +56,11 @@ Character::Character(CharacterType type, QGraphicsItem *parent)
         squatingPixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_squat.png"), this);
         squatingPixmapItem->setPos(0, 0);
         squatingPixmapItem->setVisible(false);
+
+        // 加载隐身状态的图片
+        invisiblePixmapItem = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/character_green_invisible.png"), this);
+        invisiblePixmapItem->setPos(0, 0);
+        invisiblePixmapItem->setVisible(false);
     }
 //    ellipseItem = new QGraphicsEllipseItem(-5, -5, 10, 10, this);
 //    // Optionally, set some properties of the ellipse
@@ -109,8 +119,16 @@ void Character::setVelocity(const QPointF &velocity) {
 
 void Character::processInput() {
     auto velocity = QPointF(0, 0);
-    const auto moveSpeed = 0.3;
-
+    const auto speed = 0.3;
+    auto moveSpeed=0.0;
+    if(is_accelerating)
+    {
+        moveSpeed=speed+0.2;
+    }
+    else
+    {
+        moveSpeed=speed;
+    }
     // 根据角色类型分配不同按键
     if (m_type == TYPE_PLAYER1)
     {
@@ -153,6 +171,7 @@ void Character::processInput() {
         // 添加玩家2其他按键控制...
     }
     setVelocity(velocity);
+    //qDebug()<<velocity.x();
 
 
     if (!lastPickDown && pickDown)
@@ -193,7 +212,7 @@ void Character::processInput() {
         }
         setState(STATE_MOVING);
     }
-    else
+    else if(velocity.x()==0&&velocity.y()==0)
     {
         if(m_state==STATE_SQUATING)
         {
@@ -218,6 +237,7 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         movingPixmapItem->setVisible(false);
         jumpingPixmapItem->setVisible(false);
         squatingPixmapItem->setVisible(false);
+        invisiblePixmapItem->setVisible(false);
     }
     else if (m_state == STATE_MOVING)
     {
@@ -225,6 +245,7 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         movingPixmapItem->setVisible(true);
         jumpingPixmapItem->setVisible(false);
         squatingPixmapItem->setVisible(false);
+        invisiblePixmapItem->setVisible(false);
     }
     else if (m_state == STATE_JUMPING)
     {
@@ -232,13 +253,24 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         movingPixmapItem->setVisible(false);
         jumpingPixmapItem->setVisible(true);
         squatingPixmapItem->setVisible(false);
+        invisiblePixmapItem->setVisible(false);
     }
     else if (m_state == STATE_SQUATING)
     {
         idlePixmapItem->setVisible(false);
         movingPixmapItem->setVisible(false);
         jumpingPixmapItem->setVisible(false);
-        squatingPixmapItem->setVisible(true);
+        if(!is_set_invisible)
+        {
+            squatingPixmapItem->setVisible(true);
+            invisiblePixmapItem->setVisible(false);
+        }
+        else
+        {
+            squatingPixmapItem->setVisible(false);
+            invisiblePixmapItem->setVisible(true);
+        }
+
     }
 
     if (idlePixmapItem->isVisible())
@@ -256,6 +288,10 @@ void Character::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     if (squatingPixmapItem->isVisible())
     {
         squatingPixmapItem->paint(painter, option, widget);
+    }
+    if (invisiblePixmapItem->isVisible())
+    {
+        invisiblePixmapItem->paint(painter, option, widget);
     }
     update();
 }
@@ -308,8 +344,9 @@ void Character::checkCollisions(Map* map)
     }
 
     qreal ceilingY=map->getCeilingHeight();
-    if(charRect.top()<=ceilingY)
+    if(charRect.top()<=ceilingY-20)
     {
+        qDebug()<<ceilingY;
         setY(ceilingY);
         velocity.setY(0);
     }
@@ -334,10 +371,6 @@ void Character::checkCollisions(Map* map)
     {
         setX(charRect.width());
         velocity.setX(0); // 停止水平移动
-        // qDebug()<<charRect.bottom();
-        // qDebug()<<charRect.top();
-        // qDebug()<<charRect.right();
-        // qDebug()<<charRect.left();
     }
     // 右侧边界检测
     if (charRect.right() > mapRight)
@@ -358,7 +391,7 @@ void Character::checkCollisions(Map* map)
         velocity.setX(0);
     }
 
-    if(charRect.right()>=254&&charRect.right()<=364&&charRect.bottom()>=440&&velocity.y()>=0)//地图左边第二个台阶的水平检测
+    if(charRect.right()>=254&&charRect.right()<=364&&charRect.bottom()>=440&&velocity.y()>=0)//地图左边第二个台阶
     {
         setX(192);
         setY(376);
@@ -366,15 +399,86 @@ void Character::checkCollisions(Map* map)
         velocity.setY(0);
         m_isGrounded=true;
     }
-    if(charRect.left()<=1154&&charRect.left()>=1064&&qAbs(charRect.bottom()-440)<0.1&&qAbs(charRect.top()-376)<0.1)//地图右边第二个台阶的水平检测
+    if(charRect.left()<=1154&&charRect.left()>=1064&&charRect.bottom()>=440&&velocity.y()>=0)//地图右边第二个台阶
     {
         setX(1154);
         setY(376);
         velocity.setX(0);
         velocity.setY(0);
+        m_isGrounded=true;
+    }
+
+    if(charRect.right()>=316&&charRect.right()<=428&&charRect.bottom()>=376&&velocity.y()>=0)//地图左边第3个台阶
+    {
+        setX(256);
+        setY(312);
+        velocity.setX(0);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+    if(charRect.left()<=1090&&charRect.left()>=1000&&charRect.bottom()>=376&&velocity.y()>=0)//地图右边第3个台阶
+    {
+        setX(1090);
+        setY(312);
+        velocity.setX(0);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+
+    if(charRect.right()>=380&&charRect.right()<=500&&charRect.bottom()>=312&&velocity.y()>=0)//地图左边第3个台阶上方
+    {
+        setY(251);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+    if(charRect.left()<=1036&&charRect.left()>=900&&charRect.bottom()>=312&&velocity.y()>=0)//地图右边第3个台阶上方
+    {
+        setY(251);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+
+    if(charRect.left()>=100&&charRect.right()<=347&&charRect.bottom()<=220&&charRect.bottom()>=215&&velocity.y()>=0)//左侧浮空平台上方
+    {
+        setY(155);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+    if(charRect.left()>=1036&&charRect.right()<=1280&&charRect.bottom()<=220&&charRect.bottom()>=215&&velocity.y()>=0)//右侧浮空平台上方
+    {
+        setY(155);
+        velocity.setY(0);
+        m_isGrounded=true;
+    }
+
+    if(charRect.left()>=350&&charRect.right()<=1050&&charRect.bottom()>=30&&charRect.bottom()<=130)//最上方平台
+    {
+        setY(42);
+        velocity.setY(0);
+        m_isGrounded=true;
     }
 
 
+}
+
+void Character::differentTerrain(Map* map)
+{
+    if(!map) return;
+    QRectF charRect=collisionRect().translated(pos());
+    if(charRect.left()>=159&&charRect.right()<=428&&charRect.bottom()>=200&&charRect.bottom()<=440)
+    {
+        is_set_invisible=false;
+        if(!is_accelerating)
+        {
+            is_accelerating=true;
+        }
+    }
+    else if(charRect.left()>=0&&charRect.left()<=159&&qAbs(charRect.top()-440)<5)
+    {
+        is_set_invisible=true;
+        is_accelerating=false;
+    }
+    update();
 }
 
 
