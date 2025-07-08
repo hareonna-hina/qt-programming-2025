@@ -6,6 +6,13 @@
 #include "Character.h"
 #include <QDateTime>
 #include <QKeyEvent>
+#include "../Fist.h"
+#include "../Knife.h"
+#include "../Bullet.h"
+#include "../Rifle.h"
+#include "../Sniper.h"
+#include "../SolidBall.h"
+#include "../Projectile.h"
 Character::Character(CharacterType type, QGraphicsItem *parent)
     : Item(parent, ""), m_type(type),is_squating(false) {
     if(type==TYPE_PLAYER1)
@@ -346,7 +353,6 @@ void Character::checkCollisions(Map* map)
     qreal ceilingY=map->getCeilingHeight();
     if(charRect.top()<=ceilingY-20)
     {
-        qDebug()<<ceilingY;
         setY(ceilingY);
         velocity.setY(0);
     }
@@ -478,7 +484,92 @@ void Character::differentTerrain(Map* map)
         is_set_invisible=true;
         is_accelerating=false;
     }
+    else
+    {
+        is_set_invisible=false;
+        is_accelerating=false;
+    }
     update();
 }
 
+void Character::takeDamage(int amount) {
+    health -= amount;
+    if (health < 0) health = 0;
+    qDebug() << (m_type == TYPE_PLAYER1 ? "玩家1" : "玩家2")
+             << "受到伤害:" << amount << "剩余生命值:" << health;
+
+    // 更新生命值显示
+    updateHealthDisplay();
+
+    if (health <= 0) {
+        qDebug() << (m_type == TYPE_PLAYER1 ? "玩家1" : "玩家2") << "被击败!";
+        // 隐藏角色
+        setVisible(false);
+        // 通知场景玩家死亡
+        if (scene()) {
+            scene()->update();
+        }
+    }
+}
+
+void Character::updateHealthDisplay() {
+    if (statusBar) {
+        statusBar->updateHearts(health);
+    }
+}
+
+void Character::checkProjectileCollisions()
+{
+    if (!scene() || !isAlive()) return;
+
+    // 获取所有投射物
+    QList<QGraphicsItem*> items = scene()->items();
+    QRectF charRect = collisionRect().translated(pos());
+
+    for (QGraphicsItem* item : items)
+    {
+        if (auto bullet = dynamic_cast<Bullet*>(item))
+        {
+            // 检查子弹是否击中
+            QRectF bulletRect = bullet->boundingRect().translated(bullet->pos());
+            if (charRect.intersects(bulletRect))
+            {
+                takeDamage(bullet->getDamage());
+                scene()->removeItem(item);
+                delete item;
+            }
+        }
+        else if (auto projectile = dynamic_cast<Projectile*>(item))
+        {
+            // 检查投掷物是否击中
+            QRectF projRect = projectile->boundingRect().translated(projectile->pos());
+            if (charRect.intersects(projRect))
+            {
+                takeDamage(projectile->getDamage());
+                scene()->removeItem(item);
+                delete item;
+            }
+        }
+        else if (dynamic_cast<Knife*>(item) || dynamic_cast<Fist*>(item))
+        {
+            // 近战武器碰撞检测
+            if (item->isVisible())
+            { // 只在攻击时检测
+                QRectF weaponRect = item->boundingRect().translated(item->pos());
+                if (charRect.intersects(weaponRect))
+                {
+                    Character* attacker = dynamic_cast<Character*>(item->parentItem());
+                    if (attacker && attacker != this)
+                    {
+                        Weapon* weapon = dynamic_cast<Weapon*>(item);
+                        if (weapon)
+                        {
+                            takeDamage(weapon->getDamage());
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 

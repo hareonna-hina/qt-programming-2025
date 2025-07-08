@@ -403,10 +403,14 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
  D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
  D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Battlefield.h \
@@ -416,4 +420,13 @@ CMakeFiles/qt_programming_2024.dir/src/Scenes/BattleScene.cpp.obj: \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
- D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlocale.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h

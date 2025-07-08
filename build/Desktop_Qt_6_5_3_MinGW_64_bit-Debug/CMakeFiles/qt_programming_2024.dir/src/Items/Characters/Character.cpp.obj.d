@@ -372,6 +372,16 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QTimer \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qtimer.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qbasictimer.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QDateTime \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qdatetime.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qcalendar.h \
@@ -389,7 +399,6 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: \
  D:/qtt/6.5.3/mingw_64/include/QtGui/qinputdevice.h \
  D:/qtt/6.5.3/mingw_64/include/QtGui/qscreen.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
- D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qobject.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QRect \
@@ -399,4 +408,13 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QSizeF \
  D:/qtt/6.5.3/mingw_64/include/QtGui/QTransform \
  D:/qtt/6.5.3/mingw_64/include/QtCore/qnativeinterface.h \
- D:/qtt/6.5.3/mingw_64/include/QtGui/qkeysequence.h
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qkeysequence.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h

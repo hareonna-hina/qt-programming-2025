@@ -11784,3 +11784,3171 @@ events:
         - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
         - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:322 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "Vulkan"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/cmake/share/cmake-4.1/Modules/FindVulkan.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake:297 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    name: "WrapVulkanHeaders"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "dependency_provider::qt_maintenance_tool_dependency"
+        mode: "provider"
+        reason: "not_found"
+      -
+        path: "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
+        mode: "module"
+        reason: "not_found"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "D:/qtt/6.5.3/mingw_64"
+      ENV{PATH}:
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X64\\"
+        - "C:\\Program Files (x86)\\Pulse Secure\\VC142.CRT\\X86\\"
+        - "C:\\Program Files (x86)\\Common Files\\Pulse Secure\\TNC Client Plugin\\"
+        - "D:\\Git\\cmd"
+        - "E:\\cmake\\bin"
+        - "D:\\cmake\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "D:\\Anaconda22"
+        - "D:\\Anaconda22\\Library\\mingw-w64\\bin"
+        - "D:\\Anaconda22\\Library\\usr\\bin"
+        - "D:\\Anaconda22\\Library\\bin"
+        - "D:\\Anaconda22\\Scripts"
+        - "C:\\Users\\Bocchi\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "D:\\VSCODE\\Microsoft VS Code\\bin"
+        - "D:\\qtt\\Tools\\mingw1120_64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/cmake"
+        - "C:/Program Files (x86)/qt_programming_2024"
+      CMAKE_MODULE_PATH:
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
+...

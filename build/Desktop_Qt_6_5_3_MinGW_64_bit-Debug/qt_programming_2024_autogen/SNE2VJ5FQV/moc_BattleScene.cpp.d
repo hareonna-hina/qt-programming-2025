@@ -10,6 +10,7 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/build/Desktop_Qt_6_5_3_MinGW_64_bit-
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
   D:/qtt/6.5.3/mingw_64/include/QtCore/QObject \

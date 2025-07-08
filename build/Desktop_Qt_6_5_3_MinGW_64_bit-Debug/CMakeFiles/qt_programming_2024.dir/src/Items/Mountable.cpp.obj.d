@@ -370,4 +370,14 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Mountable.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsScene \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/qgraphicsscene.h \
- C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QTimer \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qtimer.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qbasictimer.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qlist.h \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h

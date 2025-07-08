@@ -52,6 +52,23 @@ add_executable(qt_programming_2024 src/main.cpp
         src/Items/Equipment.h
         src/Items/StatusBar.h
         src/Items/StatusBar.cpp
+        src/Items/Weapon.h
+        src/Items/Weapon.cpp
+        src/Items/Fist.h
+        src/Items/Fist.cpp
+        src/Items/Knife.h
+        src/Items/Knife.cpp
+        src/Items/SolidBall.h
+        src/Items/SolidBall.cpp
+        src/Items/Rifle.h
+        src/Items/Rifle.cpp
+        src/Items/Sniper.h
+        src/Items/Sniper.cpp
+        src/Items/Bullet.h
+        src/Items/Bullet.cpp
+        src/Items/Projectile.h
+        src/Items/Projectile.cpp
+        src/Items/Equipment.cpp
 
 
 

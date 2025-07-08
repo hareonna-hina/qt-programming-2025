@@ -420,7 +420,11 @@ CMakeFiles/qt_programming_2024.dir/src/MyGame.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  D:/qtt/6.5.3/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
  D:/qtt/6.5.3/mingw_64/include/QtCore/QList \
  D:/qtt/6.5.3/mingw_64/include/QtGui/QPixmap \
- D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h
+ D:/qtt/6.5.3/mingw_64/include/QtGui/qpixmap.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h

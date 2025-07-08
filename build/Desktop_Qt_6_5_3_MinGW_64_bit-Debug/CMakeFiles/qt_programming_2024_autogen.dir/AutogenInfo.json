@@ -289,6 +289,12 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.h",
+			"MU",
+			"7O23G427QC/moc_Bullet.cpp",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h",
 			"MU",
 			"KRBJEFP6ZJ/moc_Character.cpp",
@@ -313,6 +319,12 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.h",
+			"MU",
+			"7O23G427QC/moc_Fist.cpp",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.h",
 			"MU",
 			"6DSFGWXEQO/moc_CapOfTheHero.cpp",
@@ -328,6 +340,12 @@
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h",
 			"MU",
 			"7O23G427QC/moc_Item.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.h",
+			"MU",
+			"7O23G427QC/moc_Knife.cpp",
 			null
 		],
 		[
@@ -361,9 +379,39 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h",
+			"MU",
+			"7O23G427QC/moc_Projectile.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h",
+			"MU",
+			"7O23G427QC/moc_Rifle.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h",
+			"MU",
+			"7O23G427QC/moc_Sniper.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h",
+			"MU",
+			"7O23G427QC/moc_SolidBall.cpp",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h",
 			"MU",
 			"7O23G427QC/moc_StatusBar.cpp",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h",
+			"MU",
+			"7O23G427QC/moc_Weapon.cpp",
 			null
 		],
 		[
@@ -463,6 +511,11 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.cpp",
 			"MU",
 			null
@@ -473,7 +526,17 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.cpp",
 			"MU",
 			null
 		],
@@ -489,6 +552,11 @@
 		],
 		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.cpp",
 			"MU",
 			null
 		],
@@ -518,7 +586,32 @@
 			null
 		],
 		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.cpp",
 			"MU",
 			null
 		],

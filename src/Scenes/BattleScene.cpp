@@ -9,6 +9,13 @@
 #include "../Items/Armors/FlamebreakerArmor.h"
 #include "../Items/StatusBar.h"
 #include <QDateTime>
+#include "../Items/Fist.h"
+#include "../Items/Knife.h"
+#include "../Items/Bullet.h"
+#include "../Items/Rifle.h"
+#include "../Items/Sniper.h"
+#include "../Items/SolidBall.h"
+#include "../Items/Projectile.h"
 
 BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     // This is useful if you want the scene to have the exact same dimensions as the view
@@ -42,10 +49,42 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     statusBar_2 = new StatusBar(StatusBar::PLAYER_2, ":/Items/Maps/Battlefield/statusbar2.png", this);
     statusBar_2->setGeometry(1060, 10, 200, 100);
 
+    // 初始生命值显示
+    statusBar_1->updateHearts(character1->getHealth());
+    statusBar_2->updateHearts(character2->getHealth());
 
-    // spareArmor->unmount();
-    // spareArmor->setPos(100, map->getFloorHeight());
+    createWeapons();
 
+
+}
+
+void BattleScene::createWeapons()
+{
+    // 小刀
+    Knife* knife = new Knife(nullptr);
+    knife->setPos(200, 300);
+    addItem(knife);
+    weapons.append(knife);
+
+    // 实心球
+    SolidBall* solidBall = new SolidBall(nullptr);
+    solidBall->setPos(400, 300);
+    addItem(solidBall);
+    weapons.append(solidBall);
+
+    // 步枪
+    Rifle* rifle = new Rifle(nullptr);
+    rifle->setPos(600, 300);
+    addItem(rifle);
+    weapons.append(rifle);
+
+    // 狙击枪
+    Sniper* sniper = new Sniper(nullptr);
+    sniper->setPos(800, 300);
+    addItem(sniper);
+    weapons.append(sniper);
+
+    // 拳头不需要创建，因为人物自带
 }
 
 void BattleScene::processInput() {
@@ -59,6 +98,11 @@ void BattleScene::processInput() {
 }
 
 void BattleScene::keyPressEvent(QKeyEvent *event) {
+    // 如果有胜利图片，禁用所有输入
+    if (victoryImage)
+    {
+        return;
+    }
     // 玩家1控制 - WASD
     if (character1 != nullptr) {
         switch (event->key()) {
@@ -139,6 +183,11 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
 }
 
 void BattleScene::keyReleaseEvent(QKeyEvent *event) {
+    // 如果有胜利图片，禁用所有输入
+    if (victoryImage)
+    {
+        return;
+    }
     // 玩家1控制 - WASD
     if (character1 != nullptr) {
         switch (event->key()) {
@@ -229,8 +278,55 @@ void BattleScene::update() {
         character2->checkCollisions(map);
         character2->differentTerrain(map);
     }
+    // 检查碰撞和游戏结束
+    if (character1 != nullptr && character1->isAlive())
+    {
+        character1->checkProjectileCollisions();
+    }
+    if (character2 != nullptr && character2->isAlive())
+    {
+        character2->checkProjectileCollisions();
+    }
+
+    checkGameOver();
     Scene::update();
 }
+
+void BattleScene::checkGameOver()
+{
+    if (victoryImage) return;
+
+    // 检查玩家死亡
+    if (character1 && !character1->isAlive()) {
+        showVictory(character2->characterType());
+    } else if (character2 && !character2->isAlive()) {
+        showVictory(character1->characterType());
+    }
+}
+
+void BattleScene::showVictory(Character::CharacterType winner)
+{
+    // 加载胜利图片
+    QString imagePath;
+    if (winner == Character::TYPE_PLAYER1)
+    {
+        imagePath = ":/Items/Victory/player1_victory.png";
+    }
+    else
+    {
+        imagePath = ":/Items/Victory/player2_victory.png";
+    }
+
+    QPixmap victoryPixmap(imagePath);
+    if (!victoryPixmap.isNull())
+    {
+        victoryImage = new QGraphicsPixmapItem(victoryPixmap);
+        // 居中显示
+        victoryImage->setPos((width() - victoryPixmap.width()) / 2, 50);
+        addItem(victoryImage);
+    }
+}
+
 
 void BattleScene::processMovement() {
     Scene::processMovement();

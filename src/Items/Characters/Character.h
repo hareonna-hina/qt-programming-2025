@@ -12,6 +12,8 @@
 #include <QGraphicsPixmapItem>
 #include <QPointF>
 #include "../Maps/Map.h"
+#include "../Weapon.h"
+#include "../StatusBar.h"
 
 
 class Character : public Item {
@@ -75,7 +77,27 @@ public:
 
     void differentTerrain(Map* map);
 
+    // 生命值相关
+    [[nodiscard]] int getHealth() const { return health; }
+    void takeDamage(int amount);
+    bool isAlive() const { return health > 0; }
+    void updateHealthDisplay();
 
+    // 获取状态栏引用
+    void setStatusBar(StatusBar* bar) { statusBar = bar; }
+
+    // 武器相关方法
+    void setCurrentWeapon(Weapon* weapon);
+    Weapon* getCurrentWeapon() const { return currentWeapon; }
+    Weapon* getFist() const { return fist; }
+    void attack();
+
+    // 添加攻击键状态
+    [[nodiscard]] bool isAttackDown() const;
+    void setAttackDown(bool attackDown);
+
+    // 碰撞检测
+    void checkProjectileCollisions();
 
 protected:
     Armor *armor{};
@@ -92,6 +114,19 @@ protected:
     CharacterState m_state;
 
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+    // 武器成员
+    Weapon* currentWeapon = nullptr;
+    Weapon* fist = nullptr;  // 默认武器（拳头）
+
+    // 攻击键状态
+    bool attackDown{};
+
+    // 生命值
+    int health = 100;
+    int maxHealth = 100;
+
+    // 状态栏
+    StatusBar* statusBar = nullptr;
 
 private:
     bool leftDown{}, rightDown{}, pickDown{};

@@ -16,19 +16,26 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/OldShirt.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/OldShirt.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/CapOfTheHero.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/WellWornTrousers.cpp \
@@ -39,8 +46,18 @@ qt_programming_2024_autogen/timestamp: C:/Users/Bocchi/Desktop/qt-programming-20
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.cpp \
+  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.h \
   C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp \
@@ -418,17 +435,13 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/CMakeLists.txt:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/assets/assets.qrc:
 
-D:/qtt/6.5.3/mingw_64/include/QtGui/qfont.h:
-
-D:/cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake:
-
-D:/cmake/bin/cmake.exe:
-
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.h:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Core/QtInstallPaths.cmake:
 
@@ -439,10 +452,6 @@ CMakeFiles/4.1.0-rc1/CMakeRCCompiler.cmake:
 .qtc/package-manager/auto-setup.cmake:
 
 CMakeFiles/4.1.0-rc1/CMakeCXXCompiler.cmake:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qpointer.h:
-
-D:/cmake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake:
 
@@ -462,9 +471,13 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qstringlist.h:
 
 qt_programming_2024_autogen/moc_predefs.h:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.cpp:
+
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/Armor.h:
 
@@ -474,11 +487,13 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qtypeinfo.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.cpp:
 
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h:
-
 D:/qtt/6.5.3/mingw_64/include/QtGui/qcursor.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/EquipmentCard.h:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
 
@@ -488,21 +503,31 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Item.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/FlamebreakerArmor.h:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/OldShirt.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.cpp:
+
 D:/qtt/6.5.3/mingw_64/include/QtCore/qhashfunctions.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.cpp:
-
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/OldShirt.cpp:
-
-D:/cmake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:
-
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qdatastream.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Armors/OldShirt.h:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Map.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qarraydataops.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.cpp:
+
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.cpp:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qarraydatapointer.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Character.h:
 
@@ -520,21 +545,13 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/WellWornTrou
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Characters/Link.h:
 
-D:/cmake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake:
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.cpp:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.cpp:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.h:
 
-D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
-
-D:/cmake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:
-
-D:/qtt/6.5.3/mingw_64/include/QtGui/qpixelformat.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/q20memory.h:
-
-D:/cmake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.cpp:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qsize.h:
 
@@ -560,6 +577,10 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/HeadEquipments/HeadEquipment.h:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.cpp:
+
 D:/qtt/6.5.3/mingw_64/include/QtCore/qshareddata.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.cpp:
@@ -570,6 +591,8 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.cpp:
 
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.cpp:
+
 D:/cmake/share/cmake-4.1/Modules/GNUInstallDirs.cmake:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment.h:
@@ -577,6 +600,26 @@ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/LegEquipments/LegEquipment
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Maps/Battlefield.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Mountable.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qset.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.cpp:
+
+D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/QObject:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h:
+
+D:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.cpp:
+
+C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.cpp:
 
@@ -586,21 +629,21 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qfloat16.h:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/StatusBar.h:
 
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/MyGame.cpp:
-
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/BattleScene.cpp:
 
-D:/qtt/6.5.3/mingw_64/include/QtCore/QObject:
-
-C:/Users/Bocchi/Desktop/qt-programming-2025/src/Scenes/Scene.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h:
-
-D:/cmake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake:
+D:/cmake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake:
 
 C:/Users/Bocchi/Desktop/qt-programming-2025/src/main.cpp:
 
-D:/cmake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake:
+D:/cmake/bin/cmake.exe:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h:
+
+D:/cmake/share/cmake-4.1/Modules/CMakeCInformation.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtWidgets/qframe.h:
+
+D:/cmake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
@@ -612,17 +655,15 @@ D:/cmake/share/cmake-4.1/Modules/Platform/Windows-windres.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
-D:/qtt/6.5.3/mingw_64/include/QtWidgets/qframe.h:
-
-D:/cmake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qscopedpointer.h:
-
-D:/cmake/share/cmake-4.1/Modules/CMakeCInformation.cmake:
-
 D:/qtt/6.5.3/mingw_64/include/QtCore/qtversion.h:
 
 D:/cmake/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qprocessordetection.h:
+
+D:/cmake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
 
@@ -632,7 +673,25 @@ D:/cmake/share/cmake-4.1/Modules/CMakeRCInformation.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake:
 
-D:/cmake/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake:
+D:/qtt/6.5.3/mingw_64/include/QtGui/qfont.h:
+
+D:/cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtGui/qpixelformat.h:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/q20memory.h:
+
+D:/cmake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:
+
+D:/qtt/6.5.3/mingw_64/include/QtCore/qpointer.h:
+
+D:/cmake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake:
+
+D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:
+
+D:/cmake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:
 
 D:/cmake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
@@ -757,10 +816,6 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake:
 D:/qtt/6.5.3/mingw_64/include/QtCore/qanystringview.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qarraydata.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qarraydataops.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qarraydatapointer.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qassert.h:
 
@@ -909,8 +964,6 @@ D:/qtt/6.5.3/mingw_64/include/QtCore/qrect.h:
 D:/qtt/6.5.3/mingw_64/include/QtCore/qrefcount.h:
 
 D:/qtt/6.5.3/mingw_64/include/QtCore/qscopeguard.h:
-
-D:/qtt/6.5.3/mingw_64/include/QtCore/qset.h:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake:
 
@@ -1199,8 +1252,6 @@ D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.c
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake:
-
-D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
 D:/qtt/6.5.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
 

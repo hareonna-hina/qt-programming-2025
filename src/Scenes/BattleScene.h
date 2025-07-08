@@ -10,6 +10,8 @@
 #include "../Items/Maps/Map.h"
 #include "../Items/Characters/Character.h"
 #include "../Items/StatusBar.h"
+#include "../Items/Weapon.h"
+#include <QList>
 
 class BattleScene : public Scene {
 Q_OBJECT
@@ -22,6 +24,12 @@ public:
     void processMovement() override;
 
     void processPicking() override;
+
+    void showVictory(Character::CharacterType type);
+
+    void createWeapons();
+
+    QList <Weapon*> weapons;
 
 protected slots:
 
@@ -44,6 +52,8 @@ private:
     Armor *spareArmor;
     StatusBar* statusBar_1;
     StatusBar* statusBar_2;
+    QGraphicsPixmapItem* victoryImage = nullptr;
+    void checkGameOver();
 };
 
 

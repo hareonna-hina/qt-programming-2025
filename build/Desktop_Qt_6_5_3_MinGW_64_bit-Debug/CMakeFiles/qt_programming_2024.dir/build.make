@@ -73,15 +73,23 @@ qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: CMakeFiles/qt_programming
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/HeadEquipments/CapOfTheHero/BotW_Cap_of_the_Hero_Icon.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_invisible.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_jump.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/full_heart.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_idle.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_walk.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/BotW_Flamebreaker_Armor_Icon.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/sniper.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_squat.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/gun.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_idle.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/fist.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_squat.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_invisible.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/solidball.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_green_jump.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/half_heart.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/knife.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/character_beige_walk.png
+qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/FlamebreakerArmor/empty_heart.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Armors/OldShirt/BotW_Old_Shirt_Icon.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/g9tOqth.png
 qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp: C:/Users/Bocchi/Desktop/qt-programming-2025/assets/Items/Maps/Battlefield/map.png
@@ -396,11 +404,146 @@ CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.s"
 	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\StatusBar.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\StatusBar.cpp.s
 
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Weapon.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Weapon.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Weapon.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Weapon.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Weapon.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Weapon.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Weapon.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Weapon.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Fist.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Fist.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Fist.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Fist.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Fist.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Fist.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Fist.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Fist.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Knife.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Knife.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Knife.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Knife.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Knife.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Knife.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Knife.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Knife.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\SolidBall.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\SolidBall.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\SolidBall.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\SolidBall.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\SolidBall.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\SolidBall.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\SolidBall.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Rifle.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Rifle.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Rifle.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Rifle.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Rifle.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Rifle.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Rifle.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Sniper.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Sniper.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Sniper.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Sniper.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Sniper.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Sniper.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Sniper.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Bullet.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Bullet.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Bullet.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Bullet.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Bullet.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Bullet.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Bullet.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Bullet.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Projectile.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Projectile.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Projectile.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Projectile.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Projectile.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Projectile.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Projectile.cpp.s
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj: C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Equipment.cpp
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\src\Items\Equipment.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\src\Items\Equipment.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Equipment.cpp
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.i"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Equipment.cpp > CMakeFiles\qt_programming_2024.dir\src\Items\Equipment.cpp.i
+
+CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.s"
+	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bocchi\Desktop\qt-programming-2025\src\Items\Equipment.cpp -o CMakeFiles\qt_programming_2024.dir\src\Items\Equipment.cpp.s
+
 CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj: CMakeFiles/qt_programming_2024.dir/flags.make
 CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj: CMakeFiles/qt_programming_2024.dir/includes_CXX.rsp
 CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj: qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp
 CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj: CMakeFiles/qt_programming_2024.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj"
 	D:\qtt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj -MF CMakeFiles\qt_programming_2024.dir\qt_programming_2024_autogen\GBFAFXFCVO\qrc_assets.cpp.obj.d -o CMakeFiles\qt_programming_2024.dir\qt_programming_2024_autogen\GBFAFXFCVO\qrc_assets.cpp.obj -c C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\qt_programming_2024_autogen\GBFAFXFCVO\qrc_assets.cpp
 
 CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.i: cmake_force
@@ -433,6 +576,15 @@ qt_programming_2024_OBJECTS = \
 "CMakeFiles/qt_programming_2024.dir/src/Items/Armors/FlamebreakerArmor.cpp.obj" \
 "CMakeFiles/qt_programming_2024.dir/src/Items/EquipmentCard.cpp.obj" \
 "CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj" \
+"CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj" \
 "CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj"
 
 # External object files for target qt_programming_2024
@@ -458,6 +610,15 @@ qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Mountable.
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Armors/FlamebreakerArmor.cpp.obj
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/EquipmentCard.cpp.obj
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/StatusBar.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Weapon.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Fist.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Knife.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/SolidBall.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Rifle.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Sniper.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Bullet.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Projectile.cpp.obj
+qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/src/Items/Equipment.cpp.obj
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/qt_programming_2024_autogen/GBFAFXFCVO/qrc_assets.cpp.obj
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/build.make
 qt_programming_2024.exe: D:/qtt/6.5.3/mingw_64/lib/libQt6Widgets.a
@@ -466,7 +627,7 @@ qt_programming_2024.exe: D:/qtt/6.5.3/mingw_64/lib/libQt6Core.a
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/linkLibs.rsp
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/objects1.rsp
 qt_programming_2024.exe: CMakeFiles/qt_programming_2024.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable qt_programming_2024.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Bocchi\Desktop\qt-programming-2025\build\Desktop_Qt_6_5_3_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable qt_programming_2024.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\qt_programming_2024.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

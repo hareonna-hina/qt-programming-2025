@@ -26,20 +26,27 @@ public:
                QWidget* widget=nullptr) override;
 
     PlayerType playerType() const {return m_playerType;}
+    void updateHearts(int health);
+    int maxHearts() const { return 5; } // 5颗心
 
 private:
     void updateLayout();
+    void createHeartItems();
+
     PlayerType m_playerType;
     QPixmap m_backgroundImage;
     QList<EquipmentCard*> m_cards;
 
-    qreal m_width =200;
-    qreal m_height=100;
-    qreal m_padding=10;
+    // 心形图标
+    QList<QGraphicsPixmapItem*> hearts;
+    QGraphicsPixmapItem* halfHeartIcon = nullptr;
+    QGraphicsPixmapItem* emptyHeartIcon = nullptr;
+    QGraphicsPixmapItem* fullHeartIcon = nullptr;
+
+    qreal m_width = 200;
+    qreal m_height = 100;
+    qreal m_padding = 10;
 };
-
-
-
 
 
 #endif // STATUSBAR_H
