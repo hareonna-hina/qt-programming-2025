@@ -40,7 +40,6 @@ void Rifle::attack(Character* user)
 
         bulletCount--;
         lastFireTime = currentTime;
-        qDebug() << "步枪射击! 剩余子弹:" << bulletCount;
 
         if (bulletCount <= 0)
         {

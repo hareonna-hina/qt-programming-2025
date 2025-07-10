@@ -417,4 +417,6 @@ CMakeFiles/qt_programming_2024.dir/src/Items/Characters/Character.cpp.obj: \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Rifle.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Sniper.h \
  C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/SolidBall.h \
- C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h
+ C:/Users/Bocchi/Desktop/qt-programming-2025/src/Items/Projectile.h \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/QDebug \
+ D:/qtt/6.5.3/mingw_64/include/QtCore/qdebug.h

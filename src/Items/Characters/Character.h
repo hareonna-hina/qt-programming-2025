@@ -43,6 +43,7 @@ public:
     [[nodiscard]] const QPointF &getVelocity() const;
 
     [[nodiscard]] bool isPicking() const;
+    void processPicking();
 
     void setVelocity(const QPointF &velocity);
 
@@ -98,6 +99,7 @@ public:
 
     // 碰撞检测
     void checkProjectileCollisions();
+    bool isFacingRight(){return m_isFacingRight;}
 
 protected:
     Armor *armor{};
@@ -140,6 +142,7 @@ private:
     const qreal JUMPING_SPEED=-0.4;//初始跳跃速度
     qreal airTime=0;
     bool is_accelerating=false;
+    bool m_isFacingRight=true;
 
 
 };

@@ -13,6 +13,9 @@
 #include "../Sniper.h"
 #include "../SolidBall.h"
 #include "../Projectile.h"
+#include <QDebug>
+
+
 Character::Character(CharacterType type, QGraphicsItem *parent)
     : Item(parent, ""), m_type(type),is_squating(false) {
     if(type==TYPE_PLAYER1)
@@ -143,12 +146,14 @@ void Character::processInput() {
         {  // 玩家1向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
+            m_isFacingRight=false;
             //setVelocity(velocity);
         }
         if (isRightDown())
         { // 玩家1向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
+            m_isFacingRight=true;
             //setVelocity(velocity);
         }
         if(isJumpDown()&&!is_jumping)
@@ -163,12 +168,14 @@ void Character::processInput() {
         {  // 玩家2向左移动
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
+            m_isFacingRight=false;
             //setVelocity(velocity);
         }
         if (isRightDown())
         { // 玩家2向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
+            m_isFacingRight=true;
             //setVelocity(velocity);
         }
         if(isJumpDown()&&!is_jumping)
@@ -178,7 +185,6 @@ void Character::processInput() {
         // 添加玩家2其他按键控制...
     }
     setVelocity(velocity);
-    //qDebug()<<velocity.x();
 
 
     if (!lastPickDown && pickDown)
@@ -190,6 +196,10 @@ void Character::processInput() {
         picking = false;
     }
     lastPickDown = pickDown;
+    if(picking)
+    {
+        processPicking();
+    }
 
     // 根据速度更新人物状态
     if(is_squating)
@@ -230,6 +240,38 @@ void Character::processInput() {
     }
     update();
 
+}
+
+void Character::processPicking()
+{
+    if (!isPicking() || !isAlive()) return;
+
+    QList<QGraphicsItem*> sceneItems = scene()->items();
+    for (QGraphicsItem* item : sceneItems)
+    {
+        Weapon* weapon = dynamic_cast<Weapon*>(item);
+        if (weapon && weapon->parentItem() == nullptr)
+        {
+            QRectF charWorldRect = mapToScene(collisionRect()).boundingRect();
+            QRectF weaponWorldRect = weapon->mapToScene(weapon->boundingRect()).boundingRect();
+            if (!charWorldRect.intersects(weaponWorldRect)) continue;
+
+            QRectF charLocalRect = collisionRect(); // 人物碰撞盒（局部坐标）
+            QRectF weaponLocalRect = weapon->boundingRect(); // 武器碰撞盒（局部坐标）
+
+            qreal offsetX = isFacingRight()
+                                ? (charLocalRect.width() - weaponLocalRect.width()+14)
+                                : -weaponLocalRect.width();
+            qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+10) / 2;
+
+            weapon->setParentItem(this);
+            weapon->setPos(offsetX, offsetY);
+
+            // 4. 切换当前武器（触发旧武器掉落）
+            setCurrentWeapon(weapon);
+            return;
+        }
+    }
 }
 
 bool Character::isPicking() const {
@@ -321,10 +363,6 @@ void Character::applyGravity(qreal deltaTime)
         is_jumping=false;
     }
     setY(y()+velocity.y()*airTime);
-    if(TYPE_PLAYER1)
-    {
-        qDebug()<<velocity.y();
-    }
     update();
 }
 
@@ -495,14 +533,11 @@ void Character::differentTerrain(Map* map)
 void Character::takeDamage(int amount) {
     health -= amount;
     if (health < 0) health = 0;
-    qDebug() << (m_type == TYPE_PLAYER1 ? "玩家1" : "玩家2")
-             << "受到伤害:" << amount << "剩余生命值:" << health;
 
     // 更新生命值显示
     updateHealthDisplay();
 
     if (health <= 0) {
-        qDebug() << (m_type == TYPE_PLAYER1 ? "玩家1" : "玩家2") << "被击败!";
         // 隐藏角色
         setVisible(false);
         // 通知场景玩家死亡
@@ -573,3 +608,36 @@ void Character::checkProjectileCollisions()
     }
 }
 
+void Character::setCurrentWeapon(Weapon* weapon)
+{
+    // 移除旧武器（仅解除父子关系，不删除，允许丢弃在场景）
+    if (currentWeapon && currentWeapon != fist)
+    { // 保留拳头作为默认武器
+        currentWeapon->setParentItem(nullptr); // 旧武器脱离角色
+        currentWeapon->setVisible(true); // 旧武器显示在场景中（可被再次拾取）
+    }
+
+    // 设置新武器
+    currentWeapon = weapon;
+    if (currentWeapon)
+    {
+        currentWeapon->setParentItem(this); // 新武器跟随角色
+        currentWeapon->setFacingRight(transform().m11() > 0); // 同步朝向
+        currentWeapon->setVisible(true);
+    }
+    else
+    {
+        // 若新武器为空，默认使用拳头
+        currentWeapon = fist;
+        currentWeapon->setParentItem(this);
+    }
+}
+
+void Character::attack()
+{
+    if (currentWeapon && isAlive())
+    {
+        currentWeapon->setFacingRight(transform().m11() > 0); // 攻击时同步朝向
+        currentWeapon->attack(this);
+    }
+}

@@ -80,10 +80,9 @@ void BattleScene::createWeapons()
 
     // 狙击枪
     Sniper* sniper = new Sniper(nullptr);
-    sniper->setPos(800, 300);
+    sniper->setPos(600, 400);
     addItem(sniper);
     weapons.append(sniper);
-
     // 拳头不需要创建，因为人物自带
 }
 
