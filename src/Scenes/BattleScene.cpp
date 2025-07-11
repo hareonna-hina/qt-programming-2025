@@ -22,32 +22,30 @@ BattleScene::BattleScene(QObject *parent) : Scene(parent) {
     setSceneRect(0, 0, 1280, 720);
 
     map = new Battlefield();
-    // 创建两个玩家角色
-    character1 = new Link(Character::TYPE_PLAYER1);
-    character2 = new Link(Character::TYPE_PLAYER2);
-
-    //spareArmor = new FlamebreakerArmor();
 
     addItem(map);
-    addItem(character1);
-    addItem(character2);
-    //addItem(spareArmor);
 
     map->scaleToFitScene(this);
 
-    // 设置角色起始位置
-    // 设置不同位置
-    character1->setPos(110,440);   // 玩家1起始位置
-    character2->setPos(1180,440);   // 玩家2起始位置
 
     // 创建玩家1的状态栏
     statusBar_1 = new StatusBar(StatusBar::PLAYER_1, ":/Items/Maps/Battlefield/statusbar1.png", this);
-    statusBar_1->setGeometry(10, 10, 200, 100);
+    statusBar_1->setGeometry(10, 10, 330, 130);
 
 
     // 创建玩家2的状态栏
     statusBar_2 = new StatusBar(StatusBar::PLAYER_2, ":/Items/Maps/Battlefield/statusbar2.png", this);
-    statusBar_2->setGeometry(1060, 10, 200, 100);
+    statusBar_2->setGeometry(1000, 10, 330, 130);
+
+    // 创建两个玩家角色
+    character1 = new Link(Character::TYPE_PLAYER1);
+    character2 = new Link(Character::TYPE_PLAYER2);
+    // 设置角色起始位置
+    // 设置不同位置
+    character1->setPos(110,440);   // 玩家1起始位置
+    character2->setPos(1180,440);   // 玩家2起始位置
+    addItem(character1);
+    addItem(character2);
 
     // 初始生命值显示
     statusBar_1->updateHearts(character1->getHealth());

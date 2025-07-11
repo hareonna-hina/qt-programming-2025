@@ -28,6 +28,10 @@ StatusBar::StatusBar(PlayerType playerType,
     halfHeartIcon = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/half_heart.png"), this);
     emptyHeartIcon = new QGraphicsPixmapItem(QPixmap(":/Items/Armors/FlamebreakerArmor/empty_heart.png"), this);
 
+    fullHeartIcon->setVisible(false);
+    halfHeartIcon->setVisible(false);
+    emptyHeartIcon->setVisible(false);
+
     // 创建初始心形显示
     createHeartItems();
 }
@@ -59,16 +63,31 @@ void StatusBar::createHeartItems()
 void StatusBar::updateHearts(int health)
 {
     // 每颗心20点生命值，每个半心10点
+    int totalHearts=maxHearts();
     int fullHearts = health / 20;
     int halfHeart = (health % 20) >= 10 ? 1 : 0;
 
-    for (int i = 0; i < maxHearts(); i++) {
-        if (i < fullHearts) {
+    fullHearts=qBound(0,fullHearts,totalHearts);
+    halfHeart=qBound(0,halfHeart,1);
+
+    for (int i = 0; i < totalHearts; i++) {
+        if (i < fullHearts)
+        {
+            hearts[i]->setVisible(false);
             hearts[i]->setPixmap(fullHeartIcon->pixmap());
-        } else if (i == fullHearts && halfHeart) {
+            hearts[i]->setVisible(true);
+        }
+        else if (i == fullHearts && halfHeart)
+        {
+            hearts[i]->setVisible(false);
             hearts[i]->setPixmap(halfHeartIcon->pixmap());
-        } else {
+            hearts[i]->setVisible(true);
+        }
+        else
+        {
+            hearts[i]->setVisible(false);
             hearts[i]->setPixmap(emptyHeartIcon->pixmap());
+            hearts[i]->setVisible(true);
         }
     }
 
@@ -145,18 +164,20 @@ void StatusBar::clearEquipmentCards()
 void StatusBar::updateLayout()
 {
     // 心形图标布局
-    const qreal heartSize = 20;
-    const qreal heartSpacing = 5;
+    const qreal heartSize = 32;
+    const qreal heartSpacing = 15;
     qreal heartsWidth = maxHearts() * (heartSize + heartSpacing) - heartSpacing;
 
     // 计算起始位置（居中）
-    qreal heartsX = (m_width - heartsWidth) / 2;
-    qreal heartsY = 10;
+    qreal heartsX = (m_width - heartsWidth-60) / 2;
+    qreal heartsY = 20;
 
     for (int i = 0; i < hearts.size(); i++)
     {
         hearts[i]->setPos(heartsX + i * (heartSize + heartSpacing), heartsY);
+        hearts[i]->setScale(1);
     }
+
 
     //计算卡片区域大小
     const qreal cardAreaHeight=m_height*0.7;

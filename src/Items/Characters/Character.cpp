@@ -72,10 +72,6 @@ Character::Character(CharacterType type, QGraphicsItem *parent)
         invisiblePixmapItem->setPos(0, 0);
         invisiblePixmapItem->setVisible(false);
     }
-//    ellipseItem = new QGraphicsEllipseItem(-5, -5, 10, 10, this);
-//    // Optionally, set some properties of the ellipse
-//    ellipseItem->setBrush(Qt::green);          // Fill color
-//    ellipseItem->setZValue(1);
 
 }
 
@@ -147,14 +143,12 @@ void Character::processInput() {
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
             m_isFacingRight=false;
-            //setVelocity(velocity);
         }
         if (isRightDown())
         { // 玩家1向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
             m_isFacingRight=true;
-            //setVelocity(velocity);
         }
         if(isJumpDown()&&!is_jumping)
         {
@@ -169,14 +163,12 @@ void Character::processInput() {
             velocity.setX(velocity.x() - moveSpeed);
             setTransform(QTransform().scale(-1, 1));
             m_isFacingRight=false;
-            //setVelocity(velocity);
         }
         if (isRightDown())
         { // 玩家2向右移动
             velocity.setX(velocity.x() + moveSpeed);
             setTransform(QTransform().scale(1, 1));
             m_isFacingRight=true;
-            //setVelocity(velocity);
         }
         if(isJumpDown()&&!is_jumping)
         {
@@ -258,17 +250,28 @@ void Character::processPicking()
 
             QRectF charLocalRect = collisionRect(); // 人物碰撞盒（局部坐标）
             QRectF weaponLocalRect = weapon->boundingRect(); // 武器碰撞盒（局部坐标）
-
-            qreal offsetX = isFacingRight()
-                                ? (charLocalRect.width() - weaponLocalRect.width()+14)
-                                : -weaponLocalRect.width();
-            qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+10) / 2;
-
             weapon->setParentItem(this);
-            weapon->setPos(offsetX, offsetY);
-
-            // 4. 切换当前武器（触发旧武器掉落）
             setCurrentWeapon(weapon);
+            if(m_currentWeaponType==SNIPER)
+            {
+                qreal offsetX = isFacingRight()
+                ? (charLocalRect.width() - weaponLocalRect.width()+30)
+                : -weaponLocalRect.width();
+                qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+14) / 2;//这个+14和+10是调出来的，保证武器在人物手上
+                weapon->setPos(offsetX, offsetY);
+                qDebug()<<1;
+            }
+            else
+            {
+                qreal offsetX = isFacingRight()
+                ? (charLocalRect.width() - weaponLocalRect.width()+14)
+                : -weaponLocalRect.width();
+                qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+10) / 2;//这个+14和+10是调出来的，保证武器在人物手上
+                weapon->setPos(offsetX, offsetY);
+            }
+
+
+
             return;
         }
     }
@@ -509,7 +512,7 @@ void Character::differentTerrain(Map* map)
 {
     if(!map) return;
     QRectF charRect=collisionRect().translated(pos());
-    if(charRect.left()>=159&&charRect.right()<=428&&charRect.bottom()>=200&&charRect.bottom()<=440)
+    if(charRect.left()>=159&&charRect.right()<=428&&charRect.bottom()>=200&&charRect.bottom()<=440)//雪地加速
     {
         is_set_invisible=false;
         if(!is_accelerating)
@@ -517,12 +520,13 @@ void Character::differentTerrain(Map* map)
             is_accelerating=true;
         }
     }
-    else if(charRect.left()>=0&&charRect.left()<=159&&qAbs(charRect.top()-440)<5)
+    else if((charRect.left()>=0&&charRect.left()<=159&&qAbs(charRect.top()-440)<5)||
+               (charRect.left()<=1280&&charRect.left()>=1128&&qAbs(charRect.top()-440)<5))//草地下蹲隐身,meixiewan!!!!!
     {
         is_set_invisible=true;
         is_accelerating=false;
     }
-    else
+    else//土地啥也没有
     {
         is_set_invisible=false;
         is_accelerating=false;
@@ -615,6 +619,7 @@ void Character::setCurrentWeapon(Weapon* weapon)
     { // 保留拳头作为默认武器
         currentWeapon->setParentItem(nullptr); // 旧武器脱离角色
         currentWeapon->setVisible(true); // 旧武器显示在场景中（可被再次拾取）
+        currentWeapon->setPos(x(),y());
     }
 
     // 设置新武器
@@ -631,6 +636,7 @@ void Character::setCurrentWeapon(Weapon* weapon)
         currentWeapon = fist;
         currentWeapon->setParentItem(this);
     }
+    m_currentWeaponType=currentWeapon->getType();
 }
 
 void Character::attack()

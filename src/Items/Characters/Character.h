@@ -101,6 +101,8 @@ public:
     void checkProjectileCollisions();
     bool isFacingRight(){return m_isFacingRight;}
 
+    WeaponType getCurrentWeaponType() const {return m_currentWeaponType;}
+
 protected:
     Armor *armor{};
     QPointF velocity{};
@@ -143,6 +145,7 @@ private:
     qreal airTime=0;
     bool is_accelerating=false;
     bool m_isFacingRight=true;
+    WeaponType m_currentWeaponType=FIST;
 
 
 };

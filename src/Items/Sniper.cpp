@@ -5,7 +5,7 @@
 #include <QDebug>
 
 Sniper::Sniper(QGraphicsItem* parent)
-    : Weapon(parent, "::/Items/Armors/FlamebreakerArmor/sniper.png", SNIPER)
+    : Weapon(parent, ":/Items/Armors/FlamebreakerArmor/sniper.png", SNIPER)
 {
     setVisible(true);
 }
