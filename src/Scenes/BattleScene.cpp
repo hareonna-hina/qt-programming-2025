@@ -72,13 +72,13 @@ void BattleScene::createWeapons()
 
     // 步枪
     Rifle* rifle = new Rifle(nullptr);
-    rifle->setPos(600, 300);
+    rifle->setPos(200,180);
     addItem(rifle);
     weapons.append(rifle);
 
     // 狙击枪
     Sniper* sniper = new Sniper(nullptr);
-    sniper->setPos(600, 400);
+    sniper->setPos(100, 180);
     addItem(sniper);
     weapons.append(sniper);
     // 拳头不需要创建，因为人物自带
@@ -134,6 +134,14 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
                 character1->is_jumping=true;
             }
             break;
+        case Qt::Key_G:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
+            character1->setAttackDown(true);
+            character1->m_isAttacking=true;
+            break;
         default:
             Scene::keyPressEvent(event);;
         }
@@ -171,6 +179,14 @@ void BattleScene::keyPressEvent(QKeyEvent *event) {
             {
                 character2->setJumpDown(true);
             }
+            break;
+        case Qt::Key_Shift:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
+            character2->setAttackDown(true);
+            character2->m_isAttacking=true;
             break;
         default:
             Scene::keyPressEvent(event);;
@@ -211,6 +227,14 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
             if(event->isAutoRepeat()) return;
             character1->setJumpDown(false);
             break;
+        case Qt::Key_G:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
+            character1->setAttackDown(false);
+            character1->m_isAttacking=false;
+            break;
         default:
             Scene::keyReleaseEvent(event);
         }
@@ -242,6 +266,14 @@ void BattleScene::keyReleaseEvent(QKeyEvent *event) {
             if(event->isAutoRepeat()) return;
             character2->setJumpDown(false);
             break;
+        case Qt::Key_Shift:
+            if(event->isAutoRepeat())
+            {
+                return;
+            }
+            character2->setAttackDown(false);
+            character2->m_isAttacking=false;
+            break;
         default:
             Scene::keyReleaseEvent(event);
         }
@@ -259,6 +291,10 @@ void BattleScene::update() {
                 character1->setSquatDown(true);
             }
         }
+        if(character1->isAttackDown())
+        {
+            character1->attack();
+        }
         character1->applyGravity(deltaTime);
         character1->checkCollisions(map);
         character1->differentTerrain(map);
@@ -271,19 +307,23 @@ void BattleScene::update() {
                 character2->setSquatDown(true);
             }
         }
+        if(character2->isAttackDown())
+        {
+            character2->attack();
+        }
         character2->applyGravity(deltaTime);
         character2->checkCollisions(map);
         character2->differentTerrain(map);
     }
-    // 检查碰撞和游戏结束
-    if (character1 != nullptr && character1->isAlive())
-    {
-        character1->checkProjectileCollisions();
-    }
-    if (character2 != nullptr && character2->isAlive())
-    {
-        character2->checkProjectileCollisions();
-    }
+    // // 检查碰撞和游戏结束
+    // if (character1 != nullptr && character1->isAlive())
+    // {
+    //     character1->checkProjectileCollisions();
+    // }
+    // if (character2 != nullptr && character2->isAlive())
+    // {
+    //     character2->checkProjectileCollisions();
+    // }
 
     checkGameOver();
     Scene::update();

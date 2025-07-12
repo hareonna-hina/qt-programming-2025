@@ -50,26 +50,6 @@ void Weapon::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QW
     }
 }
 
-void Weapon::attack(Character* user)
-{
-    if (!active)
-    {
-        active = true;
-
-        // 设置朝向
-        facingRight = (user->transform().m11() > 0);
-
-        // 只有拳头需要显示出来
-        if (type == FIST)
-        {
-            setVisible(true);
-        }
-
-        // 已移除 0.5秒后隐藏武器的逻辑
-        // 永久显示非拳头武器
-    }
-}
-
 EquipmentCard* Weapon::createCard() const
 {
     return new EquipmentCard(m_pixmapPath);

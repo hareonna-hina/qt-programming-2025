@@ -9,33 +9,31 @@ Fist::Fist(QGraphicsItem* parent)
 
 void Fist::attack(Character* user)
 {
-    Weapon::attack(user);
+    qDebug()<<1;
+    setVisible(true);
+    facingRight = (user->transform().m11() > 0);
 
-    if(facingRight)
+    // 根据朝向调整位置（确保图片与角色对齐）
+    if (facingRight)
     {
-        setPos(32,16);
+        setPos(32, 16);  // 角色右侧
     }
     else
     {
-        setPos(-32,16);
+        setPos(-32, 16); // 角色左侧
     }
-    // 检查攻击范围内是否有敌人
-    QList<QGraphicsItem*> items = scene()->items();
-    QRectF attackArea = boundingRect().translated(pos());
 
-    // 如果面向左边，调整攻击区域
-    if (!facingRight)
-    {
-        attackArea.setX(pos().x() - attackArea.width());
-    }
+    // 执行碰撞检测（使用图片原始大小）
+    QRectF attackArea = mapToScene(boundingRect()).boundingRect();
+    QList<QGraphicsItem*> items = user->scene()->items(attackArea);
 
     for (QGraphicsItem* item : items)
     {
         if (auto enemy = dynamic_cast<Character*>(item))
         {
-            if (enemy != user && enemy->collidesWithItem(this))
+            if (enemy != user)
             {
-                enemy->takeDamage(10); // 拳头伤害
+                enemy->takeDamage(10);
             }
         }
     }

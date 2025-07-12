@@ -9,27 +9,27 @@ Knife::Knife(QGraphicsItem* parent)
 
 void Knife::attack(Character* user)
 {
-    Weapon::attack(user);
 
     if(facingRight)
     {
-        setPos(40,0);
+        setPos(54,28);
     }
     else
     {
-        setPos(-40,0);
+        setPos(54,28);
     }
     // 检查攻击范围内是否有敌人
     QList<QGraphicsItem*> items = scene()->items();
-    QRectF attackArea = boundingRect().translated(pos());
+    QRectF attackArea = mapToScene(boundingRect()).boundingRect();
 
     for (QGraphicsItem* item : items)
     {
         if (auto enemy = dynamic_cast<Character*>(item))
         {
-            if (enemy != user && enemy->collidesWithItem(this))
+            if (enemy != user && enemy->collidesWithItem(this)&&user->m_isAttacking)
             {
                 enemy->takeDamage(20); // 小刀伤害
+                user->m_isAttacking=false;
             }
         }
     }

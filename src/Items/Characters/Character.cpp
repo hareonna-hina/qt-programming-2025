@@ -115,6 +115,15 @@ bool Character::isSquatDown() const {
     return squatDown;
 }
 
+void Character::setAttackDown(bool attackDown)
+{
+    Character::attackDown=attackDown;
+}
+bool Character::isAttackDown() const
+{
+    return attackDown;
+}
+
 const QPointF &Character::getVelocity() const {
     return velocity;
 }
@@ -256,22 +265,18 @@ void Character::processPicking()
             {
                 qreal offsetX = isFacingRight()
                 ? (charLocalRect.width() - weaponLocalRect.width()+30)
-                : -weaponLocalRect.width();
+                : weaponLocalRect.width();
                 qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+14) / 2;//这个+14和+10是调出来的，保证武器在人物手上
                 weapon->setPos(offsetX, offsetY);
-                qDebug()<<1;
             }
             else
             {
                 qreal offsetX = isFacingRight()
                 ? (charLocalRect.width() - weaponLocalRect.width()+14)
-                : -weaponLocalRect.width();
+                : weaponLocalRect.width()+30;
                 qreal offsetY = (charLocalRect.height() - weaponLocalRect.height()+10) / 2;//这个+14和+10是调出来的，保证武器在人物手上
                 weapon->setPos(offsetX, offsetY);
             }
-
-
-
             return;
         }
     }
@@ -370,6 +375,11 @@ void Character::applyGravity(qreal deltaTime)
 }
 
 QRectF Character::collisionRect() const
+{
+    return QRectF(0,0,COLLISION_SIZE,COLLISION_SIZE);
+}
+
+QRectF Character::boundingRect() const
 {
     return QRectF(0,0,COLLISION_SIZE,COLLISION_SIZE);
 }
@@ -512,7 +522,8 @@ void Character::differentTerrain(Map* map)
 {
     if(!map) return;
     QRectF charRect=collisionRect().translated(pos());
-    if(charRect.left()>=159&&charRect.right()<=428&&charRect.bottom()>=200&&charRect.bottom()<=440)//雪地加速
+    if((charRect.left()>=159&&charRect.right()<=428&&charRect.bottom()>=200&&charRect.bottom()<=440)
+        ||(charRect.left()<=1154&&charRect.left()>=900&&charRect.bottom()>=200&&charRect.bottom()<=440))//雪地加速
     {
         is_set_invisible=false;
         if(!is_accelerating)
@@ -521,7 +532,8 @@ void Character::differentTerrain(Map* map)
         }
     }
     else if((charRect.left()>=0&&charRect.left()<=159&&qAbs(charRect.top()-440)<5)||
-               (charRect.left()<=1280&&charRect.left()>=1128&&qAbs(charRect.top()-440)<5))//草地下蹲隐身,meixiewan!!!!!
+               (charRect.left()<=1280&&charRect.left()>=1128&&qAbs(charRect.top()-440)<5)
+               ||(charRect.left()>=350&&charRect.right()<=1050&&charRect.bottom()>=30&&charRect.bottom()<=130))//草地下蹲隐身
     {
         is_set_invisible=true;
         is_accelerating=false;
@@ -551,66 +563,68 @@ void Character::takeDamage(int amount) {
     }
 }
 
-void Character::updateHealthDisplay() {
-    if (statusBar) {
+void Character::updateHealthDisplay()
+{
+    if (statusBar)
+    {
         statusBar->updateHearts(health);
     }
 }
 
-void Character::checkProjectileCollisions()
-{
-    if (!scene() || !isAlive()) return;
+// void Character::checkProjectileCollisions()
+// {
+//     if (!scene() || !isAlive()) return;
 
-    // 获取所有投射物
-    QList<QGraphicsItem*> items = scene()->items();
-    QRectF charRect = collisionRect().translated(pos());
+//     // 获取所有投射物
+//     QList<QGraphicsItem*> items = scene()->items();
+//     QRectF charRect = collisionRect().translated(pos());
 
-    for (QGraphicsItem* item : items)
-    {
-        if (auto bullet = dynamic_cast<Bullet*>(item))
-        {
-            // 检查子弹是否击中
-            QRectF bulletRect = bullet->boundingRect().translated(bullet->pos());
-            if (charRect.intersects(bulletRect))
-            {
-                takeDamage(bullet->getDamage());
-                scene()->removeItem(item);
-                delete item;
-            }
-        }
-        else if (auto projectile = dynamic_cast<Projectile*>(item))
-        {
-            // 检查投掷物是否击中
-            QRectF projRect = projectile->boundingRect().translated(projectile->pos());
-            if (charRect.intersects(projRect))
-            {
-                takeDamage(projectile->getDamage());
-                scene()->removeItem(item);
-                delete item;
-            }
-        }
-        else if (dynamic_cast<Knife*>(item) || dynamic_cast<Fist*>(item))
-        {
-            // 近战武器碰撞检测
-            if (item->isVisible())
-            { // 只在攻击时检测
-                QRectF weaponRect = item->boundingRect().translated(item->pos());
-                if (charRect.intersects(weaponRect))
-                {
-                    Character* attacker = dynamic_cast<Character*>(item->parentItem());
-                    if (attacker && attacker != this)
-                    {
-                        Weapon* weapon = dynamic_cast<Weapon*>(item);
-                        if (weapon)
-                        {
-                            takeDamage(weapon->getDamage());
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//     for (QGraphicsItem* item : items)
+//     {
+//         if (auto bullet = dynamic_cast<Bullet*>(item))
+//         {
+//             // 检查子弹是否击中
+//             QRectF bulletRect = bullet->boundingRect().translated(bullet->pos());
+//             if (charRect.intersects(bulletRect))
+//             {
+//                 takeDamage(bullet->getDamage());
+//                 scene()->removeItem(item);
+//                 delete item;
+//             }
+//         }
+//         else if (auto projectile = dynamic_cast<Projectile*>(item))
+//         {
+//             // 检查投掷物是否击中
+//             QRectF projRect = projectile->boundingRect().translated(projectile->pos());
+//             if (charRect.intersects(projRect))
+//             {
+//                 takeDamage(projectile->getDamage());
+//                 scene()->removeItem(item);
+//                 delete item;
+//             }
+//         }
+//         else if (dynamic_cast<Knife*>(item) || dynamic_cast<Fist*>(item))
+//         {
+//             // 近战武器碰撞检测
+//             if (item->isVisible())
+//             { // 只在攻击时检测
+//                 QRectF weaponRect = item->boundingRect().translated(item->pos());
+//                 if (charRect.intersects(weaponRect))
+//                 {
+//                     Character* attacker = dynamic_cast<Character*>(item->parentItem());
+//                     if (attacker && attacker != this)
+//                     {
+//                         Weapon* weapon = dynamic_cast<Weapon*>(item);
+//                         if (weapon)
+//                         {
+//                             weapon->attack(this);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 void Character::setCurrentWeapon(Weapon* weapon)
 {
@@ -647,3 +661,4 @@ void Character::attack()
         currentWeapon->attack(this);
     }
 }
+

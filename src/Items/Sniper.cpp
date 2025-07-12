@@ -22,7 +22,6 @@ void Sniper::attack(Character* user)
 
     if (bulletCount > 0)
     {
-        Weapon::attack(user);
 
         // 设置位置 - 在人物前方
         if (facingRight)

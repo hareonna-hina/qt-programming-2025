@@ -12,7 +12,6 @@ void SolidBall::attack(Character* user)
 {
     if (throwCount > 0)
     {
-        Weapon::attack(user);
 
         // 设置位置 - 在人物前方
         if (facingRight)

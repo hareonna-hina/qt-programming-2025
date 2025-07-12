@@ -45,6 +45,9 @@ public:
     [[nodiscard]] bool isPicking() const;
     void processPicking();
 
+    [[nodiscard]] bool isAttackDown() const;
+    void setAttackDown(bool attackDown);
+
     void setVelocity(const QPointF &velocity);
 
     void processInput();
@@ -92,16 +95,16 @@ public:
     Weapon* getCurrentWeapon() const { return currentWeapon; }
     Weapon* getFist() const { return fist; }
     void attack();
+    QRectF boundingRect() const override;
 
-    // 添加攻击键状态
-    [[nodiscard]] bool isAttackDown() const;
-    void setAttackDown(bool attackDown);
 
     // 碰撞检测
     void checkProjectileCollisions();
     bool isFacingRight(){return m_isFacingRight;}
 
     WeaponType getCurrentWeaponType() const {return m_currentWeaponType;}
+
+    bool m_isAttacking=false;
 
 protected:
     Armor *armor{};
@@ -122,9 +125,6 @@ protected:
     Weapon* currentWeapon = nullptr;
     Weapon* fist = nullptr;  // 默认武器（拳头）
 
-    // 攻击键状态
-    bool attackDown{};
-
     // 生命值
     int health = 100;
     int maxHealth = 100;
@@ -137,6 +137,7 @@ private:
     bool lastPickDown{};
     bool picking{};
     bool jumpDown{},squatDown{};
+    bool attackDown{};
     bool m_isGrounded=false;
     const qreal GRAVITY=5;
     const qreal MAX_FALL_SPEED=10;
@@ -146,7 +147,6 @@ private:
     bool is_accelerating=false;
     bool m_isFacingRight=true;
     WeaponType m_currentWeaponType=FIST;
-
 
 };
 

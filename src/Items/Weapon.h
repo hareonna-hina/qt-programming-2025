@@ -20,9 +20,8 @@ class Weapon:public Equipment
 public:
     explicit Weapon(QGraphicsItem* parent,const QString& pixmapPath,WeaponType type);
 
-    virtual void attack(Character* user);
+    virtual void attack(Character* user)=0;
     WeaponType getType() const {return type;}
-    bool isActive() const {return active;}
 
     void setFacingRight(bool facingRight);
 
@@ -32,7 +31,6 @@ public:
     virtual EquipmentCard* createCard() const override;
 protected:
     WeaponType type;
-    bool active=false;
     bool facingRight=true;
     QTimer* attackTimer=nullptr;
     QPixmap weaponPixmap;
